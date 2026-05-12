@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaLa Frontend :: Version History</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="site-title">MaLa</div>
+  <div class="site-subtitle">Multi Emulator Front-End &nbsp;::&nbsp; Arcade Cabinet Software</div>
+</header>
+
+<nav>
+  <div class="nav-inner nav-row1"><a href="index.html">About</a><a href="download.html">Download</a><a href="screenshots.html">Screenshots</a><a href="hardware.html">Hardware</a><a href="layouts.html">Layouts</a><a href="plugins.html">Plugins</a></div>
+  <div class="nav-inner"><a href="presets.html">Presets</a><a href="history.html" class="active">History</a><a href="wip.html">WIP</a><a href="docs.html">Docs</a><a href="usercabs.html">User Cabs</a><a href="links.html">Links</a></div>
+</nav>
+
+<div class="wrapper">
+
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Releases</div>
+      <p><a href="#v174">v1.74</a> — Mar 2011</p>
+      <p><a href="#v173">v1.73</a> — Nov 2010</p>
+      <p><a href="#v172">v1.72</a> — Oct 2010</p>
+      <p><a href="#v171">v1.71</a> — Sep 2010</p>
+      <p>… and earlier</p>
+    </div>
+  </aside>
+
+  <main>
+    <h1>Version History</h1>
+    <p>This list shows what was implemented in each release.</p>
+
+    <div class="version-block" id="v174">
+      <div class="version-tag">v1.74 &mdash; March 2011</div>
+      <div class="version-section-label">Improvements</div>
+      <ul>
+        <li>Video Engine updated</li>
+        <li>Video Type Options increased for startup video and screensaver</li>
+        <li>Better logic for 'Next Letter' scrolling when grouping games starting with non-letter characters</li>
+        <li>Added Hibernate Exit option</li>
+        <li>Improved suspend/hibernate reactions</li>
+        <li>Added more logging when loading ShowInfo window</li>
+        <li>Error dialogue pops up if startup video not found (rather than sitting on blank screen)</li>
+        <li>Options — moved Video Display controls onto the same window as other Display delay controls</li>
+        <li>Menu — Exit key now bails out of the menu from any level</li>
+      </ul>
+      <div class="version-section-label">Bugfixes</div>
+      <ul>
+        <li>Fixed Definable 5 for info window</li>
+        <li>Fixed Snap Display if tree enabled on menu window</li>
+        <li>Fixed mouse scroll on initial MaLa start</li>
+        <li>MaLa Tree — fixed upward movement control so items did not drift from parent</li>
+        <li>Fixed autorepeat on Letter Up/Down, X Up/Down</li>
+        <li>Stopped 'Show Metadata' being enabled on pop-up window when Tree Menu selected</li>
+        <li>Add Game to list via right-click popup menu — bug fixed when using Tree</li>
+        <li>Changed order so video plays before game when both selected on startup</li>
+        <li>Add Game to list via menu — bug fixed when using Tree</li>
+        <li>Fixed ability to reduce volume via menu while music stops/fades</li>
+        <li>Improved handling of snap and video loading after orientation change</li>
+        <li>Better handling of bad/corrupt images — no more crashes</li>
+        <li>Fixed bug with auto repeat while volume control visible</li>
+      </ul>
+    </div>
+
+    <div class="version-block" id="v173">
+      <div class="version-tag">v1.73 &mdash; November 2010</div>
+      <div class="version-section-label">Improvements</div>
+      <ul>
+        <li>Major compiler change — IDE moved to Delphi 2007 (no longer Delphi 5)</li>
+      </ul>
+      <div class="version-section-label">Bugfixes</div>
+      <ul>
+        <li>Fixed bug with Auto key repeat (using next letter or X skip)</li>
+        <li>Bug fixes for Audio Fade rate and triggering</li>
+        <li>Bug fix for Audio triggering when using Tree and Audio with Layout</li>
+      </ul>
+    </div>
+
+    <div class="version-block" id="v172">
+      <div class="version-tag">v1.72 &mdash; October 2010</div>
+      <div class="version-section-label">Improvements</div>
+      <ul>
+        <li>Added workarounds and logging to better handle failed graphic load attempts</li>
+        <li>PluginSDK — added better plug-in configuration window example</li>
+        <li>PluginSDK — added Arzoo's MaLa stub tool</li>
+        <li>PluginSDK — now packaged with the standard MaLa download to encourage plugin development</li>
+        <li>Removed unsupported checkboxes on the Plugin list</li>
+        <li>Added code to stop more than one instance of MaLa being opened at a time</li>
+        <li>Added comments to MAME.ini editor</li>
+        <li>Added auto pause for BG music if Video Screensaver is triggered with sound enabled</li>
+        <li>Added Hi Info page and improved Most Played lists configuration</li>
+      </ul>
+      <div class="version-section-label">Bugfixes</div>
+      <ul>
+        <li>Fixed bug with 'remove brackets on the fly' option — MaLa could enter endless loop if brackets unpaired</li>
+        <li>Fixed bug where selected game in list would jump after orientation change</li>
+        <li>Fixed BG Music for Layouts</li>
+        <li>Fixed bug displaying some images when first item in list selected</li>
+      </ul>
+    </div>
+
+    <div class="version-block" id="v171">
+      <div class="version-tag">v1.71 &mdash; September 2010</div>
+      <div class="version-section-label">Improvements</div>
+      <ul>
+        <li>Video — Made MaLa more tolerant of video types; releases file handles if not playing</li>
+      </ul>
+      <div class="version-section-label">Bugfixes</div>
+      <ul>
+        <li>Fixed bug where marquees, control panel and definables were not being shown correctly in certain configurations</li>
+      </ul>
+    </div>
+
+    <p style="color:var(--text-dim);font-size:0.85rem;">Earlier version history available in the MaLa documentation.</p>
+  </main>
+
+  <aside class="sidebar sidebar-right">
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Latest Release</div>
+      <p>Current stable: <strong>v1.74</strong></p>
+      <p>Latest beta: <strong>v1.820</strong></p>
+      <p><a href="download.html">→ Download</a></p>
+    </div>
+  </aside>
+
+</div>
+
+<footer>
+  <div class="footer-brand">MaLa Frontend</div>
+  Copyright &copy; 2006&ndash;2008 Stefan Windus &nbsp;::&nbsp; Design by <a href="http://andreasviklund.com" target="_blank">Andreas Viklund</a> &nbsp;::&nbsp; Web coding by Space Fractal
+</footer>
+
+</body>
+</html>

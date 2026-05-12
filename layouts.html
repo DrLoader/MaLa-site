@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaLa Frontend :: Layouts</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .layout-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.1rem; margin: 1rem 0; }
+    .lcard { background: var(--panel); border: 1px solid var(--border); border-top: 3px solid var(--neon-c); border-radius: 0 0 4px 4px; overflow: hidden; }
+    .lcard-imgs { display: flex; background: #000; min-height: 70px; }
+    .lcard-imgs img { flex: 1; max-height: 120px; object-fit: cover; filter: saturate(0.8); display: block; }
+    .lcard-body { padding: .65rem .85rem; }
+    .lname { font-family: 'Orbitron', sans-serif; font-size: .82rem; color: var(--neon-c); margin-bottom: .15rem; }
+    .lauthor { font-size: .72rem; color: var(--neon-y); margin-bottom: .35rem; }
+    .ldesc { font-size: .76rem; color: var(--text-dim); margin-bottom: .45rem; line-height: 1.5; }
+    .lmeta { font-size: .68rem; color: var(--neon-g); margin-bottom: .35rem; }
+    .dlb { display: inline-block; font-family: 'Press Start 2P', monospace; font-size: .38rem; padding: .38rem .65rem; border: 1px solid var(--neon-g); color: var(--neon-g); text-decoration: none; }
+    .dlb:hover { background: rgba(0,255,136,.1); text-decoration: none; }
+    .az { display: flex; flex-wrap: wrap; gap: .25rem; margin-bottom: 1.5rem; }
+    .az a { font-family: 'Press Start 2P', monospace; font-size: .43rem; padding: .28rem .48rem; border: 1px solid var(--border); color: var(--text-dim); text-decoration: none; }
+    .az a:hover { color: var(--neon-c); border-color: var(--neon-c); text-decoration: none; }
+    .section-anchor { color: var(--neon-m); font-family: 'Orbitron', sans-serif; font-size: .7rem; margin: 1.5rem 0 .5rem; padding-bottom: .3rem; border-bottom: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+<header>
+  <div class="site-title">MaLa</div>
+  <div class="site-subtitle">Multi Emulator Front-End &nbsp;::&nbsp; Arcade Cabinet Software</div>
+</header>
+<nav>
+  <div class="nav-inner nav-row1"><a href="index.html">About</a><a href="download.html">Download</a><a href="screenshots.html">Screenshots</a><a href="hardware.html">Hardware</a><a href="layouts.html" class="active">Layouts</a><a href="plugins.html">Plugins</a></div>
+  <div class="nav-inner"><a href="presets.html">Presets</a><a href="history.html">History</a><a href="wip.html">WIP</a><a href="docs.html">Docs</a><a href="usercabs.html">User Cabs</a><a href="links.html">Links</a></div>
+</nav>
+<div class="wrapper">
+
+<aside class="sidebar">
+  <div class="sidebar-section">
+    <div class="sidebar-heading">Types</div>
+    <p>• Fixed size<br>• Scalable</p>
+    <div class="sidebar-heading" style="margin-top:1rem">Ratios</div>
+    <p>1.33 (4:3)<br>1.25 (5:4)<br>1.6 (16:10)<br>Free</p>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-heading">Install</div>
+    <p>Extract into the <span style="color:var(--neon-g)">layouts/</span> subfolder then select in MaLa Options.</p>
+  </div>
+</aside>
+
+<main>
+  <h1>Community Layouts</h1>
+  <p>Over 60 layouts contributed by the MaLa community. Layout zip files and preview images are served from the <code style="color:var(--neon-g);background:var(--panel);padding:.1rem .3rem">files/layouts/</code> folder.</p>
+
+  <div class="info-box">
+    <span class="info-label">► SUBMIT A LAYOUT</span>
+    Created a layout? Post it on the <a href="http://forum.arcadecontrols.com/index.php/board,43.0.html" target="_blank">BYOAC MaLa Forum</a> to share with the community.
+  </div>
+
+  <div class="az">
+    <a href="#s1">1</a><a href="#sA">A</a><a href="#sB">B</a><a href="#sC">C</a><a href="#sD">D</a>
+    <a href="#sE">E</a><a href="#sF">F</a><a href="#sG">G</a><a href="#sH">H</a><a href="#sI">I</a>
+    <a href="#sK">K</a><a href="#sL">L</a><a href="#sM">M</a><a href="#sN">N</a><a href="#sP">P</a>
+    <a href="#sR">R</a><a href="#sS">S</a><a href="#sT">T</a><a href="#sV">V</a><a href="#sW">W</a>
+  </div>
+
+  <div id="s1" class="section-anchor">— 1 —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/19421.jpg" alt="1942"></div>
+      <div class="lcard-body">
+        <div class="lname">1942</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">Marquee, control panel, game list snap and flyer.</div>
+        <a href="files/layouts/1942.zip" class="dlb">▼ Download 392KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sA" class="section-anchor">— A —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/3newdk_layouts1.jpg" alt="DK1"><img src="files/layouts/3newdk_layouts2.jpg" alt="DK1"></div>
+      <div class="lcard-body">
+        <div class="lname">DK1 — Three DK Jr Pack</div><div class="lauthor">by Mike Boss</div>
+        <div class="ldesc">Three DK JR inspired layouts. All designed in 600x800 for vertical monitors.</div>
+        <a href="files/layouts/3newdk_layouts.zip" class="dlb">▼ Download 1.5MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/a_clockwork_orange_layout_by_animalbear1.jpg" alt="Clockwork Orange"></div>
+      <div class="lcard-body">
+        <div class="lname">A Clockwork Orange</div><div class="lauthor">by <a href="http://animalbear.deviantart.com/" target="_blank">AnimalBear</a></div>
+        <div class="ldesc">1280x1024 layout for the fans.</div>
+        <div class="lmeta">MaLa 1.74</div>
+        <a href="files/layouts/a_clockwork_orange_layout_by_animalbear.zip" class="dlb">▼ Download 552KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/aliendashboard.jpg" alt="Alien Dashboard"></div>
+      <div class="lcard-body">
+        <div class="lname">Alien Dashboard</div><div class="lauthor">by <a href="http://www.gamecreature.com" target="_blank">GameCreature</a></div>
+        <div class="ldesc">Fixed 1024x768. Round game list. Horizontal only.</div>
+        <div class="lmeta">MaLa v1.0 RC5+</div>
+        <a href="files/layouts/aliendashboard.7z" class="dlb">▼ Download 666KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/allemustars1.jpg" alt="All Emustars"><img src="files/layouts/allemustars2.jpg" alt="All Emustars"></div>
+      <div class="lcard-body">
+        <div class="lname">All Emustars</div><div class="lauthor">by NortstarEX</div>
+        <div class="ldesc">Scalable layout. Horizontal and vertical.</div>
+        <div class="lmeta">MaLa v1.0 RC2+</div>
+        <a href="files/layouts/allemustars.7z" class="dlb">▼ Download 87KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/applesque1.jpg" alt="Applesque"><img src="files/layouts/applesque2.jpg" alt="Applesque"></div>
+      <div class="lcard-body">
+        <div class="lname">Applesque</div><div class="lauthor">by Shock_</div>
+        <div class="ldesc">Scalable 4:3. H&amp;V. Available in azure, blue, green, orange, purple and red.</div>
+        <div class="lmeta">MaLa v1.0 RC2+</div>
+        <a href="files/layouts/applesque.7z" class="dlb">▼ Download 395KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/atari26001.jpg" alt="Atari 2600"></div>
+      <div class="lcard-body">
+        <div class="lname">Atari 2600</div><div class="lauthor">by Sardu</div>
+        <div class="ldesc">Screenshots and box art. 1024x768 scalable.</div>
+        <a href="files/layouts/atari2600.7z" class="dlb">▼ Download 496KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sB" class="section-anchor">— B —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/bad_dudes_1600x9001.jpg" alt="Bad Dudes"></div>
+      <div class="lcard-body">
+        <div class="lname">Bad Dudes (Original)</div><div class="lauthor">by Mike Boss</div>
+        <div class="ldesc">Horizontal fixed 1600x900. Large snap window.</div>
+        <div class="lmeta">MaLa 1.73</div>
+        <a href="files/layouts/bad_dudes_1600x900.zip" class="dlb">▼ Download 603KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/bad_dudes_revised1.jpg" alt="Bad Dudes Revised"><img src="files/layouts/bad_dudes_revised2.jpg" alt="Bad Dudes Revised"></div>
+      <div class="lcard-body">
+        <div class="lname">Bad Dudes Revised</div><div class="lauthor">by Mike Boss</div>
+        <div class="ldesc">1600x900. Three variants — dark, lighter and reduced windows.</div>
+        <div class="lmeta">MaLa 1.73</div>
+        <a href="files/layouts/bad_dudes_revised.zip" class="dlb">▼ Download 719KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/black1.jpg" alt="Black"></div>
+      <div class="lcard-body">
+        <div class="lname">Black</div><div class="lauthor">by livelike</div>
+        <div class="ldesc">Scalable. Horizontal only. Fonts included.</div>
+        <a href="files/layouts/black.zip" class="dlb">▼ Download 87KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/black_knight1.jpg" alt="Black Knight"></div>
+      <div class="lcard-body">
+        <div class="lname">Black Knight</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">Cabs, snaps, titles and list.</div>
+        <a href="files/layouts/black_knight.zip" class="dlb">▼ Download 375KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/blank1.jpg" alt="Blank Black"></div>
+      <div class="lcard-body">
+        <div class="lname">Blank (Generic Black)</div><div class="lauthor">by Livelike</div>
+        <div class="ldesc">Scalable 4:3. Horizontal only. Fonts, Exit and Info menus.</div>
+        <a href="files/layouts/blank.zip" class="dlb">▼ Download 87KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/blue.jpg" alt="Blue"></div>
+      <div class="lcard-body">
+        <div class="lname">Blue</div><div class="lauthor">by <a href="http://www.gamecreature.com/" target="_blank">Gamecreature</a></div>
+        <div class="ldesc">Fixed 1024x768, 800x600 and 640x480. Horizontal only.</div>
+        <div class="lmeta">MaLa v1.0 RC2+</div>
+        <a href="files/layouts/blue.7z" class="dlb">▼ Download 1.5MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/brilay1.jpg" alt="BriLay Invader"></div>
+      <div class="lcard-body">
+        <div class="lname">briLay Invader</div><div class="lauthor">by sbrick</div>
+        <div class="ldesc">HTPC layout. Fixed 1360x768. Works best in tree mode.</div>
+        <div class="lmeta">MaLa 1.73</div>
+        <a href="files/layouts/brilay.zip" class="dlb">▼ Download 2.8MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/burn1.jpg" alt="NeoBurn"></div>
+      <div class="lcard-body">
+        <div class="lname">NeoBurn</div><div class="lauthor">by <a href="http://hicksography.blogspot.com" target="_blank">Imperator</a></div>
+        <div class="ldesc">1024x768. NeoGeo theme. Displays snapshots.</div>
+        <a href="files/layouts/burn.zip" class="dlb">▼ Download 399KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sC" class="section-anchor">— C —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/cabinet1.jpg" alt="Space-Port Cabinet"><img src="files/layouts/cabinet2.jpg" alt="Space-Port Cabinet"></div>
+      <div class="lcard-body">
+        <div class="lname">Space-Port Cabinet</div><div class="lauthor">by Buried-Egg</div>
+        <div class="ldesc">1024x768 scalable. Snap, Flyer, Cabinet, CP and Marquee. Realistic arcade cabinet image.</div>
+        <a href="files/layouts/cabinet.zip" class="dlb">▼ Download 698KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/christmas_081.jpg" alt="Christmas 08"></div>
+      <div class="lcard-body">
+        <div class="lname">Christmas '08</div><div class="lauthor">by <a href="http://forum.arcadecontrols.com/index.php?action=profile;u=15297" target="_blank">System01</a></div>
+        <div class="ldesc">Fixed 1280x960. Horizontal only. Start, Exit, Menu, Info windows plus sounds.</div>
+        <a href="files/layouts/christmas_08.7z" class="dlb">▼ Download 1.8MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/custom_sf_mala_layouts1.jpg" alt="Street Fighter II"><img src="files/layouts/custom_sf_mala_layouts2.jpg" alt="Street Fighter II"></div>
+      <div class="lcard-body">
+        <div class="lname">Street Fighter II</div><div class="lauthor">by Mike Boss</div>
+        <div class="ldesc">Custom SF2 layout. 600x800. Font included. Red and blue variants also included.</div>
+        <a href="files/layouts/custom_sf_mala_layouts.zip" class="dlb">▼ Download 1.4MB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sD" class="section-anchor">— D —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/dos1.jpg" alt="DOS"></div>
+      <div class="lcard-body">
+        <div class="lname">DOS</div><div class="lauthor">by Alup</div>
+        <div class="ldesc">Old-school Win95 layout. Clock shows system time. Windows Media Player for snaps/video.</div>
+        <a href="files/layouts/dos.zip" class="dlb">▼ Download 174KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sE" class="section-anchor">— E —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/easter_091.jpg" alt="Easter 09"><img src="files/layouts/easter_092.jpg" alt="Easter 09"></div>
+      <div class="lcard-body">
+        <div class="lname">Easter '09</div><div class="lauthor">by <a href="http://forum.arcadecontrols.com/index.php?action=profile;u=15297" target="_blank">System01</a></div>
+        <div class="ldesc">Scalable H&amp;V 4:3. Start, Exit, Info and Menu windows. Logo-less backgrounds included.</div>
+        <a href="files/layouts/easter_09.zip" class="dlb">▼ Download 4.8MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/emupack11.jpg" alt="EmuPack 1"></div>
+      <div class="lcard-body">
+        <div class="lname">EmuPack 1</div><div class="lauthor">by Unknown</div>
+        <div class="ldesc">Scalable 800x600. Covers MAME, Atari 2600, C64, NES, SNES, N64 and Sega Genesis.</div>
+        <div class="lmeta">MaLa v1.0 RC2+</div>
+        <a href="files/layouts/emupack1.7z" class="dlb">▼ Download 165KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sF" class="section-anchor">— F —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/fantasy1.jpg" alt="Fantasy"></div>
+      <div class="lcard-body">
+        <div class="lname">Fantasy</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">3D layout with snaps and game list.</div>
+        <a href="files/layouts/fantasy.zip" class="dlb">▼ Download 349KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/final_fantasy1.jpg" alt="Final Fantasy"></div>
+      <div class="lcard-body">
+        <div class="lname">Final Fantasy</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">3D layout with snaps, marquee and game list.</div>
+        <a href="files/layouts/final_fantasy.zip" class="dlb">▼ Download 345KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/fix_it_felix_layout_hv1.jpg" alt="Fix It Felix"><img src="files/layouts/fix_it_felix_layout_hv2.jpg" alt="Fix It Felix"></div>
+      <div class="lcard-body">
+        <div class="lname">Fix It Felix Jr</div><div class="lauthor">by Mike Boss</div>
+        <div class="ldesc">800x600. Horizontal and vertical. Font included.</div>
+        <div class="lmeta">MaLa 1.74</div>
+        <a href="files/layouts/fix_it_felix_layout_hv.zip" class="dlb">▼ Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sG" class="section-anchor">— G —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/galaga.jpg" alt="Galaga"></div>
+      <div class="lcard-body">
+        <div class="lname">Galaga</div><div class="lauthor">by Squire</div>
+        <div class="ldesc">Fixed 640x480. Uses attract videos. Horizontal only.</div>
+        <div class="lmeta">MaLa v1.0 RC5+</div>
+        <a href="files/layouts/galaga.7z" class="dlb">▼ Download 470KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/gameex.jpg" alt="GameEx"></div>
+      <div class="lcard-body">
+        <div class="lname">GameEx</div><div class="lauthor">by Swindus</div>
+        <div class="ldesc">Scalable. Horizontal only.</div>
+        <div class="lmeta">MaLa v1.0 RC2+</div>
+        <a href="files/layouts/gameex.7z" class="dlb">▼ Download 113KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/gamelauncher1.jpg" alt="Gamelauncher"><img src="files/layouts/gamelauncher2.jpg" alt="Gamelauncher"></div>
+      <div class="lcard-body">
+        <div class="lname">Gamelauncher</div><div class="lauthor">by Swindus</div>
+        <div class="ldesc">Scalable. H&amp;V. Gamelauncher sound files included.</div>
+        <div class="lmeta">MaLa v1.0 RC2+</div>
+        <a href="files/layouts/gamelauncher.7z" class="dlb">▼ Download 157KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/gba1.jpg" alt="GBA"></div>
+      <div class="lcard-body">
+        <div class="lname">GBA</div><div class="lauthor">by Sardu</div>
+        <div class="ldesc">GBA layout using box art and screenshots. Scalable 1024x768.</div>
+        <a href="files/layouts/gba.7z" class="dlb">▼ Download 491KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/generic_cocktail1.jpg" alt="Generic Cocktail"><img src="files/layouts/generic_cocktail2.jpg" alt="Generic Cocktail"></div>
+      <div class="lcard-body">
+        <div class="lname">Generic Cocktail (by genre)</div><div class="lauthor">by system01</div>
+        <div class="ldesc">Vertical only. Scalable 1280x960. Themes change by genre. Genre gamelists included.</div>
+        <a href="files/layouts/generic_cocktail.7z" class="dlb">▼ Download 4.7MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/genesis1.jpg" alt="Sega Genesis Sardu"></div>
+      <div class="lcard-body">
+        <div class="lname">Sega Genesis</div><div class="lauthor">by Sardu</div>
+        <div class="ldesc">Screenshots and box art. 1024x768 scalable.</div>
+        <a href="files/layouts/genesis.7z" class="dlb">▼ Download 441KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/genesis_layout1.jpg" alt="Sega Genesis xTCx"></div>
+      <div class="lcard-body">
+        <div class="lname">Sega Genesis</div><div class="lauthor">by xTCx</div>
+        <div class="ldesc">Snap, title, video, game year and catver panels.</div>
+        <a href="files/layouts/genesis_layout.7z" class="dlb">▼ Download 450KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/gorf_menu_8001.jpg" alt="GORF"></div>
+      <div class="lcard-body">
+        <div class="lname">GORF</div><div class="lauthor">by oldgoer</div>
+        <div class="ldesc">Simple GORF-themed. Fixed 800x600. Displays snaps. Horizontal only.</div>
+        <a href="files/layouts/gorf_menu_800.zip" class="dlb">▼ Download 1.1MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/graffiti1.jpg" alt="Graffiti"></div>
+      <div class="lcard-body">
+        <div class="lname">Graffiti</div><div class="lauthor">by Dizzle</div>
+        <div class="ldesc">Fixed 1024x768. Snap and game list.</div>
+        <div class="lmeta">MaLa 1.05</div>
+        <a href="files/layouts/graffiti.zip" class="dlb">▼ Download 929KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/grid1.jpg" alt="Grid"></div>
+      <div class="lcard-body">
+        <div class="lname">Grid</div><div class="lauthor">by <a href="http://hicksography.blogspot.com" target="_blank">Imperator</a></div>
+        <div class="ldesc">800x600. Snapshots and marquees.</div>
+        <a href="files/layouts/grid.zip" class="dlb">▼ Download 364KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sH" class="section-anchor">— H —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/halloween1.jpg" alt="Halloween H"></div>
+      <div class="lcard-body">
+        <div class="lname">Halloween Horizontal</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">Game list and snaps. Horizontal.</div>
+        <a href="files/layouts/halloween.zip" class="dlb">▼ Download 120KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/halloween_081.jpg" alt="Halloween 08"></div>
+      <div class="lcard-body">
+        <div class="lname">Halloween '08</div><div class="lauthor">by system01</div>
+        <div class="ldesc">Scalable 1280x960. Horizontal only. Start, Exit and Info menus plus sounds.</div>
+        <a href="files/layouts/halloween_08.zip" class="dlb">▼ Download 1.8MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/halloween_128010241.jpg" alt="Halloween V"></div>
+      <div class="lcard-body">
+        <div class="lname">Halloween Vertical</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">Halloween layout for vertical cabs.</div>
+        <a href="files/layouts/halloween_12801024.zip" class="dlb">▼ Download 216KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sI" class="section-anchor">— I —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/infernolab_mala_layout1.jpg" alt="Infernolab"></div>
+      <div class="lcard-body">
+        <div class="lname">Infernolab</div><div class="lauthor">by <a href="http://www.infernolab.com" target="_blank">Jasonbar</a></div>
+        <div class="ldesc">Matches the infernolab robotics site and cabinet.</div>
+        <a href="files/layouts/infernolab_mala_layout.zip" class="dlb">▼ Download 787KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/invaders1.jpg" alt="Invaders"></div>
+      <div class="lcard-body">
+        <div class="lname">Invaders</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">Space Invaders-themed with marquee and snap.</div>
+        <a href="files/layouts/invaders.zip" class="dlb">▼ Download 123KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sK" class="section-anchor">— K —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/kongtext1.jpg" alt="DK Jr Revised"></div>
+      <div class="lcard-body">
+        <div class="lname">Donkey Kong Junior (Revised)</div><div class="lauthor">by Mike Boss</div>
+        <div class="ldesc">Animated. Fixed horizontal widescreen 960x600.</div>
+        <div class="lmeta">MaLa 1.73</div>
+        <a href="files/layouts/kongtext.zip" class="dlb">▼ Download 242KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sL" class="section-anchor">— L —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/layouts1.jpg" alt="VIDEOSONIC"><img src="files/layouts/layouts2.jpg" alt="VIDEOSONIC"></div>
+      <div class="lcard-body">
+        <div class="lname">VIDEOSONIC</div><div class="lauthor">by Gallind</div>
+        <div class="ldesc">Scalable layout inspired by the original SEGA VIDEOSONIC arcade cabinet.</div>
+        <div class="lmeta">MaLa 1.74</div>
+        <a href="files/layouts/layouts.zip" class="dlb">▼ Download 1.5MB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sM" class="section-anchor">— M —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/mala1.jpg" alt="MAMVE"><img src="files/layouts/mala2.jpg" alt="MAMVE"></div>
+      <div class="lcard-body">
+        <div class="lname">M.A.M.V.E.</div><div class="lauthor">by Gallind</div>
+        <div class="ldesc">Multiplatform anime-based layouts. MAME, SNES, NES, Genesis and Master System.</div>
+        <a href="files/layouts/mala.7z" class="dlb">▼ Download 6.3MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/mala_cab1.jpg" alt="MAME Cabs"><img src="files/layouts/mala_cab2.jpg" alt="MAME Cabs"></div>
+      <div class="lcard-body">
+        <div class="lname">MAME Cabs — Fixed</div><div class="lauthor">by Hankola</div>
+        <div class="ldesc">Mario Bros and SF2 cabinet layouts. Marquee and screenshots. Horizontal 1366x768.</div>
+        <a href="files/layouts/mala_cab.zip" class="dlb">▼ Download 4MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/mame1.jpg" alt="Blue MAME"></div>
+      <div class="lcard-body">
+        <div class="lname">Blue MAME</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">Scalable MAME layout with game characters and snaps.</div>
+        <a href="files/layouts/mame.zip" class="dlb">▼ Download 578KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/mame_evolution_layout_by_animalbear1.jpg" alt="MAME Evolution"></div>
+      <div class="lcard-body">
+        <div class="lname">MAME Evolution</div><div class="lauthor">by <a href="http://animalbear.deviantart.com/" target="_blank">AnimalBear</a></div>
+        <div class="ldesc">1280x1024 4:3.</div>
+        <div class="lmeta">MaLa 1.74</div>
+        <a href="files/layouts/mame_evolution_layout_by_animalbear.zip" class="dlb">▼ Download 834KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/mameblue1.jpg" alt="MameBlue"><img src="files/layouts/mameblue2.jpg" alt="MameBlue"></div>
+      <div class="lcard-body">
+        <div class="lname">Mameblue</div><div class="lauthor">by Avernus</div>
+        <div class="ldesc">Fixed 1024x768. H&amp;V. Animated.</div>
+        <div class="lmeta">MaLa 1.05</div>
+        <a href="files/layouts/mameblue.zip" class="dlb">▼ Download 1MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/mameroom1.jpg" alt="Game Room"><img src="files/layouts/mameroom2.jpg" alt="Game Room"></div>
+      <div class="lcard-body">
+        <div class="lname">Game Room (MAME)</div><div class="lauthor">by Sardu</div>
+        <div class="ldesc">Looks like a real game room. 1024x768 scalable. Marquee, Cpanel, flyers, snaps, clock and chalkboard game list.</div>
+        <a href="files/layouts/mameroom.zip" class="dlb">▼ Download 473KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/mario_ins_300dpi_final1.jpg" alt="Custom Mario"><img src="files/layouts/mario_ins_300dpi_final2.jpg" alt="Custom Mario"></div>
+      <div class="lcard-body">
+        <div class="lname">Custom Mario</div><div class="lauthor">by vibefx</div>
+        <div class="ldesc">1440x900 Mario themed. Font and 5"x7" instruction card included.</div>
+        <div class="lmeta">MaLa 1.74</div>
+        <a href="files/layouts/mario_ins_300dpi_final.zip" class="dlb">▼ Download 1.3MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/megamame1.jpg" alt="MEGA-MAME"></div>
+      <div class="lcard-body">
+        <div class="lname">MEGA-MAME</div><div class="lauthor">by Mike Boss</div>
+        <div class="ldesc">Classic Megaman imagery. Fixed horizontal 1024x768.</div>
+        <div class="lmeta">MaLa 1.73</div>
+        <a href="files/layouts/megamame.zip" class="dlb">▼ Download 670KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/mirrorbluepurple1.jpg" alt="Blue Mirror"><img src="files/layouts/mirrorbluepurple2.jpg" alt="Blue Mirror"></div>
+      <div class="lcard-body">
+        <div class="lname">Blue Mirror</div><div class="lauthor">by <a href="http://www.arcadeoverload.co.nz" target="_blank">WoLLieNz</a></div>
+        <div class="ldesc">Scalable 4:3 800x600. Clean blue/purple hues with metallic viewing portals.</div>
+        <div class="lmeta">MaLa 1.74</div>
+        <a href="files/layouts/mirrorbluepurple.zip" class="dlb">▼ Download 803KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/mook1.jpg" alt="Mook"></div>
+      <div class="lcard-body">
+        <div class="lname">Mook</div><div class="lauthor">by <a href="http://theretrocade.com/" target="_blank">Toolmaker</a></div>
+        <div class="ldesc">Simple and clean. Several colour variants available.</div>
+        <div class="lmeta">MaLa v1.0 RC9</div>
+        <a href="files/layouts/mook.zip" class="dlb">▼ Download 1.6MB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sN" class="section-anchor">— N —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/n641.jpg" alt="N64"></div>
+      <div class="lcard-body">
+        <div class="lname">N64</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">Nintendo 64 with snap and box art.</div>
+        <a href="files/layouts/n64.zip" class="dlb">▼ Download 565KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/nanocade_layout1.jpg" alt="Nanocade"></div>
+      <div class="lcard-body">
+        <div class="lname">Nanocade</div><div class="lauthor">by <a href="http://www.koenigs.dk" target="_blank">Koenigs</a></div>
+        <div class="ldesc">For the Nanocade acrylic micro bartop. Fixed 800x600.</div>
+        <div class="lmeta">MaLa 1.73</div>
+        <a href="files/layouts/nanocade_layout.zip" class="dlb">▼ Download 113KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/neocade_wide_fixed1.jpg" alt="Neocade"><img src="files/layouts/neocade_wide_fixed2.jpg" alt="Neocade"></div>
+      <div class="lcard-body">
+        <div class="lname">Neocade v1.0</div><div class="lauthor">by Bu2t</div>
+        <div class="ldesc">Based on Applesque. Fixed 1600x900. Horizontal. Marquee, title, cpanel, pcb, flyer and cabinet.</div>
+        <div class="lmeta">MaLa 1.74</div>
+        <a href="files/layouts/neocade_wide_fixed.zip" class="dlb">▼ Download 391KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/neogeo.jpg" alt="NeoGeo"></div>
+      <div class="lcard-body">
+        <div class="lname">NeoGeo</div><div class="lauthor">by Retrovamp</div>
+        <div class="ldesc">Scalable 640x480. Horizontal only.</div>
+        <div class="lmeta">MaLa v1.0 RC2+</div>
+        <a href="files/layouts/neogeo.7z" class="dlb">▼ Download 178KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/nes1.jpg" alt="NES"><img src="files/layouts/nes2.jpg" alt="NES"></div>
+      <div class="lcard-body">
+        <div class="lname">NES Layout (updated)</div><div class="lauthor">by Sardu</div>
+        <div class="ldesc">NES with screenshots and box art. Scalable 800x600.</div>
+        <a href="files/layouts/nes.7z" class="dlb">▼ Download 386KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/new_year_091.jpg" alt="New Year 09"><img src="files/layouts/new_year_092.jpg" alt="New Year 09"></div>
+      <div class="lcard-body">
+        <div class="lname">New Year '09</div><div class="lauthor">by system01</div>
+        <div class="ldesc">Scalable 4:3. Start, Exit and Menu windows. Clock-theme sounds.</div>
+        <a href="files/layouts/new_year_09.7z" class="dlb">▼ Download 4.9MB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sP" class="section-anchor">— P —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/pacmala1.jpg" alt="PacMala"></div>
+      <div class="lcard-body">
+        <div class="lname">PacMala</div><div class="lauthor">by Imperator</div>
+        <div class="ldesc">Fixed 800x600. Round game list view. Horizontal only.</div>
+        <a href="files/layouts/pacmala.zip" class="dlb">▼ Download 225KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/plasma1.jpg" alt="Plasma"></div>
+      <div class="lcard-body">
+        <div class="lname">Plasma</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">Plasma design with snaps, flyers, cabs, marquees and game list.</div>
+        <a href="files/layouts/plasma.zip" class="dlb">▼ Download 33KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/playthegame1.jpg" alt="Play the Game"><img src="files/layouts/playthegame2.jpg" alt="Play the Game"></div>
+      <div class="lcard-body">
+        <div class="lname">Play the Game</div><div class="lauthor">by NortstarEX</div>
+        <div class="ldesc">Scalable. H&amp;V.</div>
+        <div class="lmeta">MaLa v1.0 RC2+</div>
+        <a href="files/layouts/playthegame.7z" class="dlb">▼ Download 490KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/purple1.jpg" alt="Purple"></div>
+      <div class="lcard-body">
+        <div class="lname">Purple</div><div class="lauthor">by <a href="http://hicksography.blogspot.com" target="_blank">Imperator</a></div>
+        <div class="ldesc">1024x768. Displays snapshots.</div>
+        <a href="files/layouts/purple.zip" class="dlb">▼ Download 429KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sR" class="section-anchor">— R —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/racing.jpg" alt="Racing"></div>
+      <div class="lcard-body">
+        <div class="lname">Racing</div><div class="lauthor">by Swindus</div>
+        <div class="ldesc">Scalable. Horizontal only. Round game list.</div>
+        <div class="lmeta">MaLa v1.0 RC5+</div>
+        <a href="files/layouts/racing.7z" class="dlb">▼ Download 505KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/retrogui1.jpg" alt="RetroGUI"><img src="files/layouts/retrogui2.jpg" alt="RetroGUI"></div>
+      <div class="lcard-body">
+        <div class="lname">retroGUI</div><div class="lauthor">by <a href="http://www.nexus6-online.de/" target="_blank">nexus6</a></div>
+        <div class="ldesc">Fixed 640x480. H&amp;V MAME (animated). Covers 14 systems. GUI sounds included.</div>
+        <div class="lmeta">MaLa v1.0 RC2+</div>
+        <a href="files/layouts/retrogui.7z" class="dlb">▼ Download 1.2MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/rocks1.jpg" alt="Rocks"></div>
+      <div class="lcard-body">
+        <div class="lname">Rocks</div><div class="lauthor">by <a href="http://hicksography.blogspot.com" target="_blank">Imperator</a></div>
+        <div class="ldesc">640x480 low res. Snapshots and videos.</div>
+        <a href="files/layouts/rocks.zip" class="dlb">▼ Download 205KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sS" class="section-anchor">— S —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/sega1.jpg" alt="Sega Genesis Daniny"></div>
+      <div class="lcard-body">
+        <div class="lname">Sega Genesis</div><div class="lauthor">by Daniny Tey</div>
+        <div class="ldesc">Sega Genesis 1024x768.</div>
+        <div class="lmeta">MaLa 1.74</div>
+        <a href="files/layouts/sega.zip" class="dlb">▼ Download 617KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/skull_ninja1.jpg" alt="Skull Ninja"></div>
+      <div class="lcard-body">
+        <div class="lname">Skull Ninja</div><div class="lauthor">by AndrewBean90</div>
+        <div class="ldesc">Cool ninja skull theme.</div>
+        <div class="lmeta">MaLa 1.05a</div>
+        <a href="files/layouts/skull_ninja.zip" class="dlb">▼ Download 1.5MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/snes1.jpg" alt="SNES"><img src="files/layouts/snes2.jpg" alt="SNES"></div>
+      <div class="lcard-body">
+        <div class="lname">Super Nintendo</div><div class="lauthor">by Sardu</div>
+        <div class="ldesc">SNES with screenshots and box art. Scalable 1024x768.</div>
+        <a href="files/layouts/snes.zip" class="dlb">▼ Download 473KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/sony_playstation_mala_layout__arcademaca1.jpg" alt="PlayStation"></div>
+      <div class="lcard-body">
+        <div class="lname">Arcademaca's PlayStation Layout</div><div class="lauthor">by satoshi</div>
+        <div class="ldesc">One of the first MaLa layouts from the arcademaca team.</div>
+        <a href="files/layouts/sony_playstation_mala_layout__arcademaca.zip" class="dlb">▼ Download 122KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/spiderman1.jpg" alt="Spiderman"></div>
+      <div class="lcard-body">
+        <div class="lname">Spiderman</div><div class="lauthor">by dungbeetle46</div>
+        <div class="ldesc">Spiderman theme. Game list, marquee and snaps. Horizontal.</div>
+        <a href="files/layouts/spiderman.zip" class="dlb">▼ Download 502KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/st_patricks_day_091.jpg" alt="St Patricks Day"><img src="files/layouts/st_patricks_day_092.jpg" alt="St Patricks Day"></div>
+      <div class="lcard-body">
+        <div class="lname">St. Patrick's Day '09</div><div class="lauthor">by system01</div>
+        <div class="ldesc">Scalable 4:3 1280x960. H&amp;V. Includes logo-less backgrounds.</div>
+        <a href="files/layouts/st_patricks_day_09.zip" class="dlb">▼ Download 3.5MB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sT" class="section-anchor">— T —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/thanksgiving_081.jpg" alt="Thanksgiving 08"></div>
+      <div class="lcard-body">
+        <div class="lname">Thanksgiving '08</div><div class="lauthor">by system01</div>
+        <div class="ldesc">Scalable 1280x960. Horizontal only. Turkey-hunting sound theme.</div>
+        <a href="files/layouts/thanksgiving_08.7z" class="dlb">▼ Download 855KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/the_grid1.jpg" alt="The Grid"></div>
+      <div class="lcard-body">
+        <div class="lname">The Grid</div><div class="lauthor">by Lennert Weidemann</div>
+        <div class="ldesc">Fixed 640x480. Horizontal only. Snapshots and videos.</div>
+        <a href="files/layouts/the_grid.zip" class="dlb">▼ Download 176KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/tron_custom_mala_theme1.jpg" alt="Custom Tron"></div>
+      <div class="lcard-body">
+        <div class="lname">Custom Tron</div><div class="lauthor">by <a href="http://www.arcadeoverload.co.nz" target="_blank">WoLLieNz</a></div>
+        <div class="ldesc">Scalable 4:3 800x600. Clean dark Tron theme. Font included.</div>
+        <div class="lmeta">MaLa 1.74</div>
+        <a href="files/layouts/tron_custom_mala_theme.zip" class="dlb">▼ Download 1.1MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/typer1.jpg" alt="Type R"><img src="files/layouts/typer2.jpg" alt="Type R"></div>
+      <div class="lcard-body">
+        <div class="lname">Type R</div><div class="lauthor">by system01</div>
+        <div class="ldesc">Scalable 4:3, 16:9 and 16:10. Start, Exit, Info and Menu windows. Sounds included.</div>
+        <a href="files/layouts/typer.zip" class="dlb">▼ Download 3.9MB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sV" class="section-anchor">— V —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/v54640x4801024x7681.jpg" alt="v549e"><img src="files/layouts/v54640x4801024x7682.jpg" alt="v549e"></div>
+      <div class="lcard-body">
+        <div class="lname">v549e</div><div class="lauthor">by shock_</div>
+        <div class="ldesc">Scalable 4:3. Designed for hi-res cabinet photos, snaps and video.</div>
+        <a href="files/layouts/v54640x4801024x768.zip" class="dlb">▼ Download 1.4MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/valentines_day_091.jpg" alt="Valentines Day"><img src="files/layouts/valentines_day_092.jpg" alt="Valentines Day"></div>
+      <div class="lcard-body">
+        <div class="lname">Valentine's Day '09</div><div class="lauthor">by system01</div>
+        <div class="ldesc">Scalable 4:3 1280x960. H&amp;V. Logo-less backgrounds included.</div>
+        <a href="files/layouts/valentines_day_09.zip" class="dlb">▼ Download 4.5MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/vcp031.jpg" alt="VCP03"><img src="files/layouts/vcp032.jpg" alt="VCP03"></div>
+      <div class="lcard-body">
+        <div class="lname">VCP03</div><div class="lauthor">by tobu</div>
+        <div class="ldesc">Scalable 800x600. H&amp;V for MAME, ZSNES and ePSXe. Definables for players, controls and buttons.</div>
+        <div class="lmeta">MaLa v1.0 RC2+</div>
+        <a href="files/layouts/vcp03.7z" class="dlb">▼ Download 1.9MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/videoval1.jpg" alt="VideoVal"><img src="files/layouts/videoval2.jpg" alt="VideoVal"></div>
+      <div class="lcard-body">
+        <div class="lname">VideoVal 2013</div><div class="lauthor">by Gallind</div>
+        <div class="ldesc">Inspired by Spanish VideoVal cabinet. MAME, NES, SNES, SMS, Genesis, Visual Pinball, PC, Zinc.</div>
+        <a href="files/layouts/videoval.7z" class="dlb">▼ Download 2.9MB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/void12801.jpg" alt="The Void"></div>
+      <div class="lcard-body">
+        <div class="lname">The Void</div><div class="lauthor">by chaos</div>
+        <div class="ldesc">Fixed and optimised for 1280x1024.</div>
+        <a href="files/layouts/void1280.zip" class="dlb">▼ Download 734KB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sW" class="section-anchor">— W —</div>
+  <div class="layout-grid">
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/widescreen_960x6001.jpg" alt="DK Jr Widescreen"></div>
+      <div class="lcard-body">
+        <div class="lname">Donkey Kong Jr (1)</div><div class="lauthor">by Mike Boss</div>
+        <div class="ldesc">DK JR inspired. Animated. Vertical widescreen. Fixed 960x600.</div>
+        <div class="lmeta">MaLa 1.73</div>
+        <a href="files/layouts/widescreen_960x600.zip" class="dlb">▼ Download 279KB</a>
+      </div>
+    </div>
+    <div class="lcard">
+      <div class="lcard-imgs"><img src="files/layouts/winter_081.jpg" alt="Winter 08"></div>
+      <div class="lcard-body">
+        <div class="lname">Winter '08</div><div class="lauthor">by system01</div>
+        <div class="ldesc">Fixed horizontal 1280x960. Three detail levels with animations. Start, Exit, Info and Menu. Sounds included.</div>
+        <a href="files/layouts/winter_08.7z" class="dlb">▼ Download 1.2MB</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<aside class="sidebar sidebar-right">
+  <div class="sidebar-section">
+    <div class="sidebar-heading">About Author</div>
+    <p>MaLa was conceived and written by Stefan 'swindus' Windus. Further development by Simon 'Loadman' Loader.</p>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-heading">Submit</div>
+    <p>Share your layout on the <a href="http://forum.arcadecontrols.com/index.php/board,43.0.html" target="_blank">BYOAC MaLa Forum</a>.</p>
+  </div>
+</aside>
+
+</div>
+<footer>
+  <div class="footer-brand">MaLa Frontend</div>
+  Copyright &copy; 2006&ndash;2008 Stefan Windus &nbsp;::&nbsp; Layouts are copyright of their respective authors.
+</footer>
+</body>
+</html>
