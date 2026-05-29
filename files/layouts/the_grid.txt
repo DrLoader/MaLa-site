@@ -1,0 +1,8 @@
+The Grid
+
+Lennert Weidemann
+
+
+• Fixed size layout for 640x480
+• Horizontal view only
+• Displays snapshots/videos

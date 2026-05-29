@@ -1,0 +1,18 @@
+StartCom
+5.3.2.
+Ken
+
+
+Use startcom_config to set up your startcom plugin for Mala.
+Place startcom_config in the same folder as startcom (Usually Mala\\plugins).
+
+This package contains this readme file, startcom.mplugin, startcom_config.exe, and comdlg32.ocx
+Place the startcom.mplugin and startcom_config.exe files in your Mala\\plugins folder.
+The included comdlg32.ocx file needs to be placed in the windows\\system32 folder. It may also need to be registered with regsrv.
+To register it, click start/run then type in \"regsvr32 c:\\windows\\system32\\comdlg32.ocx \" (without the quote marks.)
+This should register it.
+The file startcom_config.exe needs this ocx file to run properly. I would try to run it first, you may already have it on your computer.
+
+This program was written by Ken Rager and is free for public use. (2009)
+
+kenrager@hotmail.com

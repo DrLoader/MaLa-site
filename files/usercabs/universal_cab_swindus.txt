@@ -1,0 +1,6 @@
+Universal cab
+
+Swindus
+
+
+A german universal cab with a rotatable 28\'\' real arcade monitor in January of 2006. The computer specs are: AMD Sempron 2.8 with 512MB Ram running WinXP. The computer is connected with an ArcadeVGA and a J-Pac circuit to the cab. I\'m running MaLa with a resolution of 368x240 on it to get a non-interlaced picture.

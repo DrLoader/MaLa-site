@@ -1,0 +1,15 @@
+Speech
+1.6
+Loadman
+www.malafe.net
+
+MaLa v1.0 RC8 and greaterThis plugin talks to you:
+* MaLa Start (Custom)
+* Game Start (Will say launched game name)
+* MaLa Quit (Custom)
+
+* Button funtion allocation.. eg FIRE, BOMB!
+
+And Much More (SEE SCREENSHOT)
+
+Needs the Windows Speech API to work.

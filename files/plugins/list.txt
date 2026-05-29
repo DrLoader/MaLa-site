@@ -1,0 +1,12 @@
+emuwave|EmuWave|emuwave
+joychoose|JoyChoose|joychoose
+ledblinky|LEDBlinky|malaledblinkyplugin
+ledwiz|LedWiz|ledwiz
+mala focus logger|MaLa Focus Logger|malafocuslogger
+mala launcher|MaLa Launcher|malalauncher
+maturealarm|MatureAlarm|malamaturealarmplugin
+rotatescreen|RotateScreen|rotatescreen
+serial display|Serial Display|malaserialdisplayplugin
+speech|Speech|speech
+startcom|StartCom|startcom
+ultrastik mapper|UltraStik Mapper|ultrastik

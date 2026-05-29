@@ -1,0 +1,81 @@
+1942|1942|1942
+a clockwork orange|A ClockWork Orange|a_clockwork_orange_layout_by_animalbear
+alien dashboard|Alien Dashboard|aliendashboard
+all emustars|All Emustars|allemustars
+applesque|Applesque|applesque
+arcademaca\'s playstation layout|Arcademaca\'s Playstation Layout|sony_playstation_mala_layout__arcademaca
+atari 2600|Atari 2600|atari2600
+bad dudes (original)|Bad Dudes (original)|bad_dudes_1600x900
+bad dudes revised|Bad Dudes Revised|bad_dudes_revised
+black knight|Black Knight|black_knight
+black|Black|black
+black|Black|blank
+blue mame|Blue Mame|mame
+blue mirror - clean simple|Blue mirror - clean simple|mirrorbluepurple
+blue|Blue|blue
+brilay invader|briLay Invader|brilay
+christmas \'08|Christmas \'08|christmas_08
+custom mario|Custom Mario|mario_ins_300dpi_final
+custom tron - simple|custom tron - simple|tron_custom_mala_theme
+dk1|DK1|3newdk_layouts
+donkey kong jr (1)|Donkey Kong Jr (1)|widescreen_960x600
+donkey kong junior (revised)|Donkey Kong Junior (REVISED)|kongtext
+dos|DOS|dos
+easter \'09|Easter \'09|easter_09
+emupack 1|EmuPack 1|emupack1
+fantasy|Fantasy|fantasy
+final fantasy|Final Fantasy|final_fantasy
+fix it felix jr|Fix It Felix Jr|fix_it_felix_layout_hv
+galaga|Galaga|galaga
+game room (mame)|Game Room (MAME)|mameroom
+gameex|GameEx|gameex
+gamelauncher|Gamelauncher|gamelauncher
+gba|GBA|gba
+generic cocktail (by genre)|Generic Cocktail (by genre)|generic_cocktail
+gorf|GORF|gorf_menu_800
+graffiti|Graffiti|graffiti
+grid|Grid|grid
+halloween \'08|Halloween \'08|halloween_08
+halloween horizontal|Halloween Horizontal|halloween
+halloween vertical|Halloween Vertical|halloween_12801024
+infernolab|Infernolab|infernolab_mala_layout
+invaders|invaders|invaders
+m.a.m.v.e (multi arcade machine & videoconsole emulator)|M.A.M.V.E (Multi Arcade Machine & VideoConsole Emulator)|mala
+mame cabs - fixed|Mame Cabs - fixed|mala_cab
+mame evolution|Mame Evolution|mame_evolution_layout_by_animalbear
+mameblue|Mameblue|mameblue
+mega-mame|MEGA-MAME|megamame
+mook|Mook|mook
+n64|N64|n64
+nanocade|Nanocade|nanocade_layout
+neoburn|NeoBurn|burn
+neocade v1.0|Neocade v1.0|neocade_wide_fixed
+neogeo|NeoGeo|neogeo
+nes layout *updated*|NES Layout *updated*|nes
+new year \'09|New Year \'09|new_year_09
+pacmala|PacMala|pacmala
+plasma|Plasma|plasma
+play the game|Play the game|playthegame
+purple|Purple|purple
+racing|Racing|racing
+retrogui|retroGUI|retrogui
+rocks|Rocks|rocks
+sega genesis|Sega Genesis|genesis
+sega genesis|Sega Genesis|genesis_layout
+sega genesis|sega genesis|sega
+skull ninja|skull ninja|skull_ninja
+space-port cabinet|Space-Port Cabinet|cabinet
+spiderman|Spiderman|spiderman
+st. patricks day \'09|St. Patricks Day \'09|st_patricks_day_09
+street fighter ii|Street Fighter II|custom_sf_mala_layouts
+super nintendo|Super Nintendo|snes
+thanksgiving \'08|Thanksgiving \'08|thanksgiving_08
+the grid|The Grid|the_grid
+the void|the void|void1280
+type r|Type R|typer
+v549e|v549e|v54640x4801024x768
+valentine\'s day \'09|Valentine\'s Day \'09|valentines_day_09
+vcp03|VCP03|vcp03
+videosonic|VIDEOSONIC|layouts
+videoval 2013|VideoVal 2013|videoval
+winter \'08|Winter \'08|winter_08

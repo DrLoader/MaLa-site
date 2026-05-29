@@ -1,0 +1,7 @@
+GameEx
+
+Swindus
+
+MaLa v1.0 RC2 and greater
+* Scalable layout
+* Horizontal view only

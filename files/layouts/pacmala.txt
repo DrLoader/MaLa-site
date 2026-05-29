@@ -1,0 +1,8 @@
+PacMala
+
+Imperator
+
+
+* Fixed size layout for 800x600
+* Round game list view
+* Horizontal view only

@@ -1,0 +1,7 @@
+MatureAlarm
+
+Swindus
+
+
+This plugin plays a siren sound when selecting a *mature* game. ;-)
+

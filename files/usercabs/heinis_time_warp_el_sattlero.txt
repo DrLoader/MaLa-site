@@ -1,0 +1,7 @@
+Heini´s Time Warp
+
+El Sattlero
+
+
+LED pushbuttons, Spinner, Trackball, 2 Lightguns, original 25´´ arcade monitor (Hantarex MTC9110), 90 degrees rotable by a switch. I´m using Ultimarcs J-Pac with ArcadeVGA and Pac-Drive. I´m also using the Speech plugin.
+The arcade machine runs mala, mame, winuae, kega fusion, xsnes, arcade jukebox and some pc games.

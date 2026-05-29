@@ -1,0 +1,6 @@
+v549e
+
+shock_
+
+
+A simple scalable layout to suit 4:3 aspect screens. Designed to make use of hi-res cabinet photos, snaps and video.

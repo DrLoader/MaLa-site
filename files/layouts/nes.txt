@@ -1,0 +1,8 @@
+NES Layout *updated*
+
+Sardu
+
+
+Here\'s a Nintendo Entertainment System layout designed to use screenshots and box art or cart scans (Marquees).
+
+* It was done in 800x600 but is scalable.

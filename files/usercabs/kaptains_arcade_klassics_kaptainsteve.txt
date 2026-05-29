@@ -1,0 +1,6 @@
+Kaptain\'s Arcade Klassics
+
+kaptainsteve
+http://www.swamp-ass.com
+
+Here is a dynamo cabinet with streetfighter control panel running mame with mala as it\'s frontend.

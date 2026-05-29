@@ -1,0 +1,10 @@
+Easter \'09
+
+System01
+http://forum.arcadecontrols.com/index.php?action=profile;u=15297
+Before 1.6
+* Scalable Horizontal & Vertical 4:3 
+(1280x960)
+* Includes \'Start\', \'Exit\', \'Info\', and 
+\'Menu\' windows.
+* Includes logo-less backgrounds

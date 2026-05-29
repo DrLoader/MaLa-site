@@ -1,0 +1,13 @@
+retroGUI
+
+nexus6
+http://www.nexus6-online.de/
+MaLa v1.0 RC2 and greater
+* Fixed size layouts for 640x480
+* Horizontal and vertical view for MAME (animated)
+* Definables for players, controls and buttons
+* Horizontal view for Amiga, Atari 2600, Atari 5200, Atari 7800, Colecovision, Gameboy Advance, Gameboy, NES, Nintendo 64, PC Engine, Sega Genesis, Sega Master System, SNES
+* GUI sounds included
+* Please read the included readme file! 
+
+If you like this design you should visit LowRez <a href="http://www.lowrez.de/">Retroshirts</a>.

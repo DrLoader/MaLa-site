@@ -1,0 +1,6 @@
+MaLa Focus Logger
+1.0
+TheShanMan
+http://forum.arcadecontrols.com/index.php?action=profile;u=15351
+
+A plug-in to fix a bug where MaLa sometime loses windows focus. The C runtime files (the non .plugin files) need to go in the mala directory itself on some systems, and in the plugin directory on others (not sure why it varies).

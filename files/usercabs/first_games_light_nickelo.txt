@@ -1,0 +1,22 @@
+First Games Light
+
+nickelo
+http://retrospowered.blogspot.com
+
+Spanish Generic Machine, 100% restored to original state
+
+Hardware:
+
+100% original arcade parts, Hantarex MTC9110 25\", US250 Power Supply and original jamma installation.
+
+Pentium 4 3,2 HT 1,25 GB, System Frezeed in Compact Flash, and boot always from hibernation, roms in 20GB disk.
+
+All system, and marquee, power and shutdown from original I/0 button.
+
+Software:
+
+Boot Fast, takes 15-20 sec.
+
+RetrOS 32bits. (Windows XP Modded for arcade cabinets)
+
+Mala 1.74 of course.

@@ -1,0 +1,12 @@
+Christmas \'08
+
+System01
+http://forum.arcadecontrols.com/index.php?action=profile;u=15297
+
+* Fixed @1280 x 960.
+* Horizontal only.
+* Includes \'Start\', \'Exit\', \'Menu\', and 
+Info windows.
+* Includes \'Click\', \'Start\', and \'Exit\'
+sounds.  Also includes Intro sound for 
+Emu-Wave users.

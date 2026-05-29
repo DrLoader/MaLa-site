@@ -1,0 +1,18 @@
+Atomic Mame Bartop
+
+nickelo
+http://retrospowered.blogspot.com
+
+Bartop portable machine, to play sitting with removable controllers.
+
+Hardware:
+
+21\" Sony Triniton monitor.
+
+All in One Nvidia motherboard, 2,5Gz Athlon 2x, 1GB RAM, and SDD 30GB, fast, fast...
+
+Software:
+
+Running RetrOS x64 Bits. (Windows XP modded for cabs)
+
+MaLa 1.74 of course.

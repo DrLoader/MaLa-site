@@ -1,0 +1,6 @@
+sega genesis
+
+Daniny Tey
+
+Mala version 0174
+Layout sega genesis 1024 * 768 ppp for Mala v.0174 by Daniny & Nina Tey

@@ -1,0 +1,12 @@
+New Year \'09
+
+System01
+http://forum.arcadecontrols.com/index.php?action=profile;u=15297
+
+* Scalable Horizontal (4:3)
+* Includes \'Start\', \'Exit\', & \'Menu\' 
+windows.
+* Includes \'Click\', \'Start\', and \'Exit\'
+sounds (clock theme).
+* Includes a legend for the pics in the 
+background.

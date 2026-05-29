@@ -1,0 +1,7 @@
+RotateScreen
+1.0
+Ede
+
+
+Automaticaly rotating monitor for the \"Jumbo Quadro\" cab (german universal cab). The full documentation inkluding hardware layout can bee found here:
+http://www.members.dokom.net/aklasener/rotatescreen.zip

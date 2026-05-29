@@ -1,0 +1,10 @@
+Black
+
+Livelike
+
+
+Generic Black Layout
+• Scalable layout (4:3)
+• Horizontal view only
+• Includes Fonts
+• Includes \'Exit\', and Info menus.

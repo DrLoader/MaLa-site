@@ -1,0 +1,10 @@
+Donkey Kong Junior (REVISED)
+
+Mike Boss
+
+I\'m using 173
+Revised Donkey Kong Junior with animation.
+Designed for a FIXED horizontal layout.
+Also designed for a widescreen use.
+
+Also 960 x 600

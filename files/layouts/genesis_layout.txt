@@ -1,0 +1,6 @@
+Sega Genesis
+
+xTCx
+
+
+*Sega Genesis layout.  Includes panels for snap/title, video (goes over TV image), game year, and catver.

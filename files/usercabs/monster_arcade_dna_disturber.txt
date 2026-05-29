@@ -1,0 +1,11 @@
+MONSTER ARCADE
+
+Dna Disturber
+
+
+*** Unleash the beast within! ***
+
+This cabinet uses mala and the incredible plugin Ledblinky.
+When scrolling down the list of games the video of that game starts to play on the virtual cabinet (which is exactly the same as the real one)
+
+*** Go Swindus  Go Loadman  Go Arzoo ***

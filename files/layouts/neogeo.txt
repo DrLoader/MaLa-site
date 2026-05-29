@@ -1,0 +1,7 @@
+NeoGeo
+
+Retrovamp
+
+MaLa v1.0 RC2 and greater
+* Scalable layout optimized for 640x480
+* Horizontal view only 

@@ -1,0 +1,7 @@
+Adams Arcade Machine & Party Starter
+
+AdamC
+
+
+Mame machine runs MAME and Gens for sega games.
+The jukebox is running SKJukebox, Ultrastar Deluxe, Frets on Fire and glTRON.

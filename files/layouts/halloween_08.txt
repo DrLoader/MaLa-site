@@ -1,0 +1,11 @@
+Halloween \'08
+
+system01
+http://forum.arcadecontrols.com/index.php?action=profile;u=15297
+
+* Scalable (Created @1280 x 960).
+* Horizontal only.
+* Includes \'Start\', \'Exit\', and Info 
+menus.
+* Includes \'Click\', \'Start\', and \'Exit\' 
+sounds.

@@ -1,0 +1,15 @@
+LEDBlinky
+3.7.3 Full Install
+Arzoo
+
+
+<a href="http://www.dndw.com/ledblinky/ledblinky.htm">LEDBlinky! Support & Screenshot Thread on BYOAC</a>.
+* Supports both the LED-Wiz and PAC-Drive USB output controllers. You can use multiple LED-Wiz’s, multiple PAC-Drives, or a combination of both.
+* Light active and/or inactive controls for MaLa.
+* Light active and/or inactive controls for MAME.
+* Remapping controls will automatically remap the associated LEDs.
+* With RGB LEDs, you can specify colors for individual controls or using a pre-defined colors.ini file, match the original game control panel button colors. Colors or intensities can also be customized on a game-by-game basis.
+* Blink and speak controls when pausing a game and/or play a LED animation. This is a MAME only feature.
+* Flash start buttons when credits are available - this is a MAME only game dependent feature.
+* AND MUCH MUCH MORE! Check the support thread on BYOAC.<a href="http://forum.arcadecontrols.com/index.php?topic=73905.0">LEDBlinky! Support & Screenshot Thread on BYOAC</a>.
+Please refer to the included ReadMe files to get it up and running!

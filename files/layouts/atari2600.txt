@@ -1,0 +1,10 @@
+Atari 2600
+
+Sardu
+
+
+Here\'s an Atari2600 layout designed to use screenshots and box art (Marquees).
+
+* It was done in 1024x768 but is scalable.
+
+* Make sure you goto  GUI>OPTIONS>PICTURES and VIDEO and uncheck \"Keep aspect ratio\" under pictures/

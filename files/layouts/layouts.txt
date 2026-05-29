@@ -1,0 +1,13 @@
+VIDEOSONIC
+
+Gallind
+
+1.7.4.0
+*An SCALABLE M.A.L.A. Layout inspired by 
+the original arts from the arcade cabinet 
+SEGA VIDEOSONIC. 
+*The instructions animation is in Spanish 
+but you can disable it easily from mala 
+layout editor. 
+*A video with the frontend working 
+http://www.youtube.com/watch?v=nC5dj0RSFmg

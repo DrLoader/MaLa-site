@@ -1,0 +1,9 @@
+GORF
+
+oldgoer
+
+
+• Simple layout based on GORF
+• Fixed size layout for 800 x 600
+• Displays snaps
+• Horizontal view only

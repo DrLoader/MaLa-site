@@ -1,0 +1,7 @@
+Jumbo Quadro \"Deluxe\"
+
+EDE
+www.members.dokom.net/aklasener/RotateScreen.zip
+
+Jumbo Quadro with automaticaly turning arcade monitor. The turning is controlled by a little hardware and a plugin for MALA called \"RotateScreen\".
+PC: P4 3GHz 1024MB JPAC / OptiPAC / AVGA2

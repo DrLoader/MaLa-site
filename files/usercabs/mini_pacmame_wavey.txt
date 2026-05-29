@@ -1,0 +1,10 @@
+Mini PacMame
+
+WaVeY
+
+
+3/4 size Pacman cabinet
+Intel Pentuim 4
+Mala frontend
+Mame only emulation (8000 roms)
+Built from scratch in 3 weeks

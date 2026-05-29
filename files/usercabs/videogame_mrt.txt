@@ -1,0 +1,21 @@
+Videogame
+
+Mr.T
+
+
+JAMMA PLUS CAB, Videogame serie.
+Hardware
+- 175x85x65 cm
+- Philips 25\'\' FLAT
+- Penitum4 @ 2.8 Ghz, RAM 512Mb, HD 80Gb
+- ARCADE VGA 128 Mb
+- Ultimarc JPAC
+- LAN, DVD LG
+Software
+- WinXP (lite) SP2 Vista Pack
+- Mame 0.129
+- Aracade Jukebox
+- Other emulators(Nes Snes Commodore...)
+- MALA
+
+It works with italian 500-lire coin!

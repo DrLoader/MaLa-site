@@ -1,0 +1,10 @@
+Mameblue
+
+Avernus
+
+1.05
+My design for my mame cab, enjoy!
+
+* Fixed 1024x768
+* Horizontal and Vertical
+* Animation

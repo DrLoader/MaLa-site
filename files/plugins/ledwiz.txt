@@ -1,0 +1,26 @@
+LedWiz
+2.0
+Swindus, Edge and Loadman
+
+
+MaLa v1.0 RC8 and greater
+
+The MaLa LEDWiz Plugin was designed to be a simple but powerful tool to help light up your control panels.
+ We tried to make it as customizable as possible, and we are always open for more suggestions. 
+ • Light up your controls in any RGB color by using the LEDWiz intensity levels
+ • Light up your controls as you scroll through game lists in MaLa
+ • Light up your game specific controls when you launch a game in MAME
+ • Set default lighting schemes for other emulators as well - not just MAME
+ • Over-ride default lighting settings for specific games (ie, NeoGeo games)
+ • FLASH -N-SPEAK - Plugin will flash and speak each control (FIRE, JUMP, etc) upon game launch
+ • Flash all your buttons on MaLa start, MaLa exit, game start, gamelist change, etc.
+ • Random Attract Mode - Randomly runs one of the many ledwiz animations (LWA) included
+ • Support for ADMIN buttons:- User can assign friendly names to admin buttons (ie, Menu, Pause, etc)- 
+ User can make admin buttons stay lit (no matter what game is selected)
+ • EZ_RGB Data Entry• To help speed up data entry when configuring your panel, the config wizard will automatically populate the RGB values based on only one input. 
+ For instance, if your RGB has its R wire in input 1, the plugin will automatically input G in input 2 and B in input 3.
+ • As you configurate your panel in the wizard, you can see your buttons lit up real time. Make a change and instantly see it!
+ • Support for up to 16 LEDWiz controllers
+ • Support for both RGB and Single Color LEDs
+ • All screens sized for 640x480.
+ • Microsoft .NET not needed.• And much more!

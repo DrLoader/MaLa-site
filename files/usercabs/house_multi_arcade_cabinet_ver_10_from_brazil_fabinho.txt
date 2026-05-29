@@ -1,0 +1,33 @@
+House Multi Arcade Cabinet Ver. 1.0 (From Brazil)
+
+Fabinho
+http://www.houseofgames.com.br
+
+House Multi Arcade Cabinet Ver. 1.0 (From Brazil)
+
+This is my first project. 
+
+I have decided to immediately use the MaLa as a system that enables the creation of custom layouts, easy installation and configuration. 
+
+Congratulations by the system!
+
+-------
+
+My configuration:
+AMD Athlon(tm) 64 X2 Dual Core Processor 4600+
+2GB RAM Kingston
+NVIDIA GeForce 7300 SE
+320GB Hard Disk
+
+Cabinet:
+29\" Monitor 15kHz Interlaced
+2 Players Controls (Conected in LPT1)
+
+Softwares:
+WinXP Professional SP3
+MaLa v1.05 [1.0.5.8]
+M.A.M.E. v0.129 (Jan  4 2009)
+PowerStrip 3.76 v5.1
+Resolution: 640x480
+
+Layout \"House Multi Arcade Cabinet Ver. 1.0\" made by Fabinho

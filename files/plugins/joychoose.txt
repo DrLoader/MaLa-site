@@ -1,0 +1,9 @@
+JoyChoose
+1.0.2
+DaOld Man
+
+
+JoyChoose is a plugin designed to work with Mala to automatically switch your joystick between 8, 4, and 2 way.
+You must add the proper hardware to your joystick to actually switch it. JoyChoose tells your hardware which joystick position to switch to, based on what the selected game used.
+If you would like to learn how to do this, this link will get you started:
+http://forum.arcadecontrols.com/index.php?topic=104762.0

@@ -1,0 +1,8 @@
+Racing
+
+Swindus
+
+MaLa v1.0 RC5 and greater
+* Scalable layout
+* Horizontal view only
+* Round game list display

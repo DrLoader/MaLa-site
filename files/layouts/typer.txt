@@ -1,0 +1,13 @@
+Type R
+
+system01
+http://forum.arcadecontrols.com/index.php?action=profile;u=15297
+Before 1.6
+* Scalable Horizontal @4:3 (1280x960)
+* Scalable Horizontal @16:9 (1920x1080)
+* Scalable Horizontal @16:10 (1600x1000)
+* \'Start\', \'Exit\', \'Info\', and \'Menu\' 
+windows.
+* \'Start\', \'Click\', and \'Exit\' sounds.
+* Logo-less backgrounds and Tuner 
+badges.

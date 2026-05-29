@@ -1,0 +1,10 @@
+VCP03
+
+tobu
+
+MaLa v1.0 RC2 and greater
+* Scalable layout optimized for 800x600
+* Horizontal and vertical view for MAME, ZSNES and ePSXe
+* Definables for players, controls and buttons
+
+Please read the included readme file. There are more screenshots of this layout on the <a href="index.php?page=screens">screens page</a>.

@@ -1,0 +1,7 @@
+Play the game
+
+NortstarEX
+
+MaLa v1.0 RC2 and greater
+* Scalable layout
+* Horizontal and vertical view

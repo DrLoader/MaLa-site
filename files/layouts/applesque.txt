@@ -1,0 +1,8 @@
+Applesque
+
+Shock_
+
+MaLa v1.0 RC2 and greater
+* Scalable layout (4:3)
+* Horizontal and vertical view
+* Available in different colors: azure, blue, green, orange, purple and red (borders, not viewable in the small preview pic) 

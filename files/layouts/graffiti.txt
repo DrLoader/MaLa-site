@@ -1,0 +1,7 @@
+Graffiti
+
+Dizzle
+
+1.05
+* fixed 1024x768
+* simple layout with snap and gamelist

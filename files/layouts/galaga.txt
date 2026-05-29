@@ -1,0 +1,8 @@
+Galaga
+
+Squire
+
+MaLa v1.0 RC5 and greater
+* Fixed size layout for 640x480
+* Uses attract vidoes
+* Horizontal view only 

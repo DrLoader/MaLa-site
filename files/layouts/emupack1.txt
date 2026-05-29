@@ -1,0 +1,7 @@
+EmuPack 1
+
+Unknown
+
+MaLa v1.0 RC2 and greater
+* Scalable layouts optimized for 800x600
+* Horizontal view for these systems: MAME, Atari 2600, Commodore 64, Nintendo SNES, Nintendo 64, Sega Genesis

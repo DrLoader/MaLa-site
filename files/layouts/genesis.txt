@@ -1,0 +1,8 @@
+Sega Genesis
+
+Sardu
+
+
+Here\'s a Sega Genesis layout designed to use screenshots and box art (Marquees).
+
+* It was done in 1024x768 but is scalable.

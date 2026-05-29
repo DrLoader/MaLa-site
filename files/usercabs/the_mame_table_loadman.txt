@@ -1,0 +1,9 @@
+The Mame table
+
+Loadman
+www.malafe.net
+
+It is a two side table. Two sets of controls are on one 
+side. It runs MaLa on a AMD XP with 1 gig of ram. 
+Connected is MaLa hardware driving the LCD Display 
+and many LEDS.

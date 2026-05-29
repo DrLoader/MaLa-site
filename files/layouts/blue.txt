@@ -1,0 +1,7 @@
+Blue
+
+Gamecreature
+http://www.gamecreature.com/
+MaLa v1.0 RC2 and greater
+* Fixed size layout for 1024x768, 800x600 and 640x480
+* Horizontal view only 

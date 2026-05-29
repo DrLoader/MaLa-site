@@ -1,0 +1,14 @@
+Winter \'08
+
+System01
+http://forum.arcadecontrols.com/index.php?action=profile;u=15297
+
+* Fixed Horizontal @ 1280 x 960
+* Includes \'Start\', \'Exit\', \'Info\', and 
+\'Menu\' windows.
+* Sounds: List movement, Start, and 
+Exit.
+* Three levels of \"detail\" with 
+animations and transparency (separate 
+MLLs).
+* Includes a logo-less background.

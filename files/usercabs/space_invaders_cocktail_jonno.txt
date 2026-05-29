@@ -1,0 +1,13 @@
+Space Invaders Cocktail
+
+Jonno
+
+
+This is my first cab.  I chose MALA for it\'s better support for vertical layouts and ease of use.  Using stock layout presently as I\'ll be creating my own one from scratch in the near future.
+
+Spec:
+
+AMD Athlon II X2 (215) 2.7GHz Processor with 512KB L2 Cache and 4000MHz Bus Speed
+4096MB Memory RAM
+1TB (1000GB) Serial ATA Hard Drive
+ATI Onboard Graphics

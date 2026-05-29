@@ -1,0 +1,14 @@
+Space-Port Cabinet
+
+Buried-Egg
+http://s2.photobucket.com/albums/y45/Dickjones/Arcade%20Cabinet%20%20-%20Final%20Version/
+
+*Created in 1024x768 (4:3)1.33 but scalable.
+
+*Displays Snap/Flyer/Cabinet/Control Panel/Marquee.
+
+*Realistic Arcade Cabinet image with CP, Marquee, and Snap superimposed.
+
+*I enjoyed GameCreature\'s \"Alien Dashboard\" so much I borrowed the Xirod font for this one!
+
+*Be sure to copy \"xirod.ttf\" file into the Windows \"Fonts\" folder.

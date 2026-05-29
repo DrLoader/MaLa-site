@@ -1,0 +1,12 @@
+Generic Cocktail (by genre)
+
+system01
+http://forum.arcadecontrols.com/index.php?action=profile;u=15297
+
+* A generic, no-name, vertical-only 
+layout set.
+* Scalable (created @1280x960).
+* Themes change depending on 
+genre/gamelist.
+* Genre gamelists included.
+* Start, Exit, and Menu images.

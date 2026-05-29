@@ -1,0 +1,6 @@
+Cocktail
+
+sadosp
+
+
+A cocktail machine who plays Mame, Atari 2600, Nes, Snes, and Genesis games. I have install both software and hardware Mala, and I am very impressed from this! Original 19\" arcade monitor, joysticks and buttons included. Also Ultimarc\'s ArcadeVga used for display.

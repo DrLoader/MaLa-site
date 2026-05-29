@@ -1,0 +1,12 @@
+DOS
+
+Alup
+
+
+This is an oldschool win95 layout.
+
+Features:
+
+1. The Clock reads the correct system time
+2. Windows media player views the snaps/video
+3. WMP info section displays rom info

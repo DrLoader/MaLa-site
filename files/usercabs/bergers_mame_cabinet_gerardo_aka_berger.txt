@@ -1,0 +1,29 @@
+Berger\'s MAME cabinet
+
+Gerardo (aka Berger)
+http://www.flickr.com/photos/maca-berger/sets
+
+Hi,
+
+Hardware:
+Pentium-4 1,9GHz (s.478)
+640MB (PC133)
+nVidia FX5200 AGP
+Ultimarc IPAC FS32 as interface
+TFT 19\" 1280x1024@60Hz
+
+Software:
+Windows XP Prof. SP1
+MAME 0.133
+MaLa 1.05
+
+MaLa:
+- Without plugins
+- Running as Windows Shell
+- Only M.A.M.E. as emulator
+- Resolution: 1280x1024@60Hz
+- Minimun layout.
+
+I like MaLa and I will make a better layout in the future :)
+
+Thanks for this great software.

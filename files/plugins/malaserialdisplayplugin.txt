@@ -1,0 +1,15 @@
+Serial Display
+
+Loadman
+
+
+Use this plugin to display text on serial displays like a BetaBrite.
+
+• Support for two displays (1xLCD & 1xBetaBrite)
+• Loads Silver .lcd files
+• Uses MaLa data to show current menu and game etc as you scroll
+• Custom text for various events (screensaver,  MaLa start)
+
+Please read the included TXT file for more information on installation and configuration. 
+
+An application for easy configuration is also included:

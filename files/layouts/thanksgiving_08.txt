@@ -1,0 +1,11 @@
+Thanksgiving \'08
+
+System01
+http://forum.arcadecontrols.com/index.php?action=profile;u=15297
+
+* Scalable (Created @1280 x 960).
+* Horizontal only
+* Includes \'Start\', \'Exit\', and info 
+menus.
+* Sounds: List movement, Start, and 
+Exit.  ()A turkey-hunting theme)

@@ -1,0 +1,11 @@
+Valentine\'s Day \'09
+
+system01
+http://forum.arcadecontrols.com/index.php?action=profile;u=15297
+
+* Scalable 4:3 (Created @ 1280x960)
+* Horizontal & Vertical Orientations
+* Includes \'Start\', \'Exit\', \'Info\', and 
+\'Menu\' windows
+* Includes Logo-less Backgrounds
+* No Sounds

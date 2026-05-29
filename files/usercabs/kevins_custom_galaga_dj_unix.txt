@@ -1,0 +1,6 @@
+Kevin\'s Custom Galaga
+
+DJ Unix
+http://www.kevinfowler.net/galaga/
+
+A scratch-built Galaga.  The control panel has a Galaga control panel build into a more functional layout and still retains the overall look and feel of Galaga.  The cab is running Mala with the Speech and UltraStick Mapper plugins.

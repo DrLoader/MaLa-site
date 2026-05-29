@@ -1,0 +1,8 @@
+Alien Dashboard
+
+GameCreature
+http://www.gamecreature.com
+MaLa v1.0 RC5 and greater
+* Fixed size layout for 1024x768
+* Round game list display
+* Horizontal view only

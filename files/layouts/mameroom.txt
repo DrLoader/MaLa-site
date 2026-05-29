@@ -1,0 +1,12 @@
+Game Room (MAME)
+
+Sardu
+http://forum.arcadecontrols.com/index.php?action=profile;u=17662
+
+Here\'s a layout that looks like it\'s in a gameroom.
+
+* created at 1024x768 but scalable
+* shows Marquee, Cpanel, flyers (definable1) and snaps.
+* Clock shows time
+* Chalkboard shows game list, manuf/date and count
+* chalk font and clock font included in .zip

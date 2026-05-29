@@ -1,0 +1,6 @@
+MaLa Launcher
+1.0
+TheShanMan
+http://forum.arcadecontrols.com/index.php?action=profile;u=15351
+
+Launch shortcuts when MaLa starts. Great if you have MaLa set to be your Windows shell but still need background apps to be started when you boot up.

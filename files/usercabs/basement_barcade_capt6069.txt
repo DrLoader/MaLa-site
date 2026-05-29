@@ -1,0 +1,8 @@
+Basement Barcade
+
+capt6069
+
+
+My first cab.  Custom built, and set up for both 2 player horizontal and 2 player vertical play.  Tall enough to \"integrate\" in the bar. 
+
+Runs MAME, Arcade Jukebox  and Mala (of course) on a 2.8 Pentium IV with 1 gb ram

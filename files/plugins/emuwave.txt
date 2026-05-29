@@ -1,0 +1,12 @@
+EmuWave
+1.6
+Loadman
+www,mala.net
+
+As you know MaLa itself already allows you to play a wav file triggered by certain events. 
+However this Plug-In gives you the added options of:
+* Playing \"Random\" wavs from a nominated folder on these events.
+* Play a \"Specific\" wav file when you switch list and Emu\'s.
+The idea behind this is you make a voice/sound saying the EMU \'or\' game lists name that will be triggered when you switch to it.
+
+<i>Please read the included TXT file for more information on installation and configuration.</i>

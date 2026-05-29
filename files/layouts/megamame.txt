@@ -1,0 +1,7 @@
+MEGA-MAME
+
+Mike Boss
+
+I\'m using 173
+Classic Megaman imagery was used to create this semi-retro layout.
+Horizontal and fixed with a resolution of 1024 x 768.

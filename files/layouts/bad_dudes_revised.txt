@@ -1,0 +1,16 @@
+Bad Dudes Revised
+
+Mike Boss
+
+I\'m using 173
+This is the revised version of my Bad Dudes layout. 
+Horizontal layout, designed @ 1600 x 900 .
+Reduced the \"snap\" window and added additional character art. Very happy with this layout. Three variants exist, all be it slight. (all three images in zip)
+
+Please note :
+
+One Image has dark windows, very little opacity.
+
+The other has lighter windows revealing more of the brick background.
+
+The third image uses the reduced windows but adds game select & start info.

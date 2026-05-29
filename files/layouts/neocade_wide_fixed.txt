@@ -1,0 +1,10 @@
+Neocade v1.0
+
+Bu2t
+
+1.7.4
+* Based on Applesque by Shock_
+* Fixed layout for 1600x900
+* Horizontal view only
+* Supports marquee, title, cpanel, pcb, flyer and cabinet (see Readme)
+* Wallpaper included

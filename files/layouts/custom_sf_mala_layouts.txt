@@ -1,0 +1,9 @@
+Street Fighter II
+
+Mike Boss
+
+
+Custom Street Fighter II Mala layout.
+Designed @ 600 x 800.
+Font file included.
+Also included is two additional colors, red & blue backgrounds.

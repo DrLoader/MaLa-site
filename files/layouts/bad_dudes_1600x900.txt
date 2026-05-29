@@ -1,0 +1,8 @@
+Bad Dudes (original)
+
+Mike Boss
+
+I\'m using 173
+This is my original Bad Dudes layout.
+Horizontal layout, designed @ 1600 x 900.
+Large window for \"snap\", additional info can be added in the window.

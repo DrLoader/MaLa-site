@@ -1,0 +1,9 @@
+Retroarcade
+
+wolfsoft
+http://www.wolfsoft.de/shop/product_info.php/products_id/14369/
+
+Its a cabinet with autorotation of the screen. I am using ledblinky for color up the buttons, stick and trackball and starcom plugin for make the screen autorotate from horizontal to vertical.
+I have done two Versions one with 25Zoll Multisync CRT from Weiya or 21Zoll LCD 4/3.
+Here you can see different videos:
+http://www.youtube.com/user/wolfsoftgmbh/search?query=retroarcade

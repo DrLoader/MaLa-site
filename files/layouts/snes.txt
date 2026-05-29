@@ -1,0 +1,8 @@
+Super Nintendo
+
+Sardu
+http://forum.arcadecontrols.com/index.php?action=profile;u=17662
+
+This Super Nintendo layout uses screenshots and box art (marquee)
+
+* It was done in 1024x768 but is scalable.
