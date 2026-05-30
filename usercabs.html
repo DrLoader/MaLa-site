@@ -5,6 +5,10 @@
 <title>MaLa Frontend :: User Cabinets</title>
 <link rel="stylesheet" href="style.css">
 <style>
+
+.uc-photo-count{position:absolute;bottom:.4rem;right:.4rem;background:rgba(0,0,0,.75);border:1px solid var(--neon-c);color:var(--neon-c);font-family:'Press Start 2P',monospace;font-size:.4rem;padding:.2rem .4rem;border-radius:2px}
+.uc-card{position:relative}
+
 .uc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
 .uc-card{background:var(--panel);border:1px solid var(--border);border-top:3px solid var(--neon-m);border-radius:0 0 4px 4px;overflow:hidden;cursor:pointer;transition:box-shadow .2s,transform .2s}
 .uc-card:hover{box-shadow:0 0 20px rgba(255,0,170,.4);transform:translateY(-2px)}
@@ -59,7 +63,7 @@
 </div>
 <div class="uc-card" onclick="openCab(2)" title="Click for more photos and details">
 <img src="files/usercabs/arcade_mini_pacmangalaxian__guiga_atomorx1.jpg" alt="Arcade Mini Pacman/Galaxian" loading="lazy">
-<div class="uc-info"><div class="uc-name">Arcade Mini Pacman/Galaxian</div><div class="uc-author">by Guiga (atomo-rx) — Brazil</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Arcade Mini Pacman/Galaxian</div><div class="uc-author">by Guiga (atomo-rx) — Brazil</div></div>
 </div>
 <div class="uc-card" onclick="openCab(3)" title="Click for more photos and details">
 <img src="files/usercabs/atomic_mame_bartop_nickelo1.jpg" alt="Atomic Mame Bartop" loading="lazy">
@@ -71,27 +75,27 @@
 </div>
 <div class="uc-card" onclick="openCab(5)" title="Click for more photos and details">
 <img src="files/usercabs/bergers_mame_cabinet_gerardo_aka_berger1.jpg" alt="Berger's MAME Cabinet" loading="lazy">
-<div class="uc-info"><div class="uc-name">Berger's MAME Cabinet</div><div class="uc-author">by Gerardo (aka Berger)</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Berger's MAME Cabinet</div><div class="uc-author">by Gerardo (aka Berger)</div></div>
 </div>
 <div class="uc-card" onclick="openCab(6)" title="Click for more photos and details">
 <img src="files/usercabs/chavos_cabinet_lllborusslll1.jpg" alt="Chavo's Cabinet" loading="lazy">
-<div class="uc-info"><div class="uc-name">Chavo's Cabinet</div><div class="uc-author">by lllBorusslll</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Chavo's Cabinet</div><div class="uc-author">by lllBorusslll</div></div>
 </div>
 <div class="uc-card" onclick="openCab(7)" title="Click for more photos and details">
 <img src="files/usercabs/cocktail_sadosp1.jpg" alt="Cocktail" loading="lazy">
-<div class="uc-info"><div class="uc-name">Cocktail</div><div class="uc-author">by sadosp</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Cocktail</div><div class="uc-author">by sadosp</div></div>
 </div>
 <div class="uc-card" onclick="openCab(8)" title="Click for more photos and details">
 <img src="files/usercabs/first_games_light_nickelo1.jpg" alt="First Games Light" loading="lazy">
-<div class="uc-info"><div class="uc-name">First Games Light</div><div class="uc-author">by nickelo</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">First Games Light</div><div class="uc-author">by nickelo</div></div>
 </div>
 <div class="uc-card" onclick="openCab(9)" title="Click for more photos and details">
 <img src="files/usercabs/heinis_time_warp_el_sattlero1.jpg" alt="Heini's Time Warp" loading="lazy">
-<div class="uc-info"><div class="uc-name">Heini's Time Warp</div><div class="uc-author">by El Sattlero</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Heini's Time Warp</div><div class="uc-author">by El Sattlero</div></div>
 </div>
 <div class="uc-card" onclick="openCab(10)" title="Click for more photos and details">
 <img src="files/usercabs/house_multi_arcade_cabinet_ver_10_from_brazil_fabinho1.jpg" alt="House Multi Arcade Ver. 1.0" loading="lazy">
-<div class="uc-info"><div class="uc-name">House Multi Arcade Ver. 1.0</div><div class="uc-author">by Fabinho — Brazil</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">House Multi Arcade Ver. 1.0</div><div class="uc-author">by Fabinho — Brazil</div></div>
 </div>
 <div class="uc-card" onclick="openCab(11)" title="Click for more photos and details">
 <img src="files/usercabs/irish_shamrock_wave81.jpg" alt="Irish Shamrock" loading="lazy">
@@ -119,7 +123,7 @@
 </div>
 <div class="uc-card" onclick="openCab(17)" title="Click for more photos and details">
 <img src="files/usercabs/lightning_mame_cab_chris1.jpg" alt="Lightning MAME Cab" loading="lazy">
-<div class="uc-info"><div class="uc-name">Lightning MAME Cab</div><div class="uc-author">by Chris</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Lightning MAME Cab</div><div class="uc-author">by Chris</div></div>
 </div>
 <div class="uc-card" onclick="openCab(18)" title="Click for more photos and details">
 <img src="files/usercabs/lsfd_arcade_capt60691.jpg" alt="LSFD Arcade" loading="lazy">
@@ -135,31 +139,31 @@
 </div>
 <div class="uc-card" onclick="openCab(21)" title="Click for more photos and details">
 <img src="files/usercabs/mini_arcade_de_piso_y_de_pared_anthony_diaz1.jpg" alt="Mini Arcade de Piso y de Pared" loading="lazy">
-<div class="uc-info"><div class="uc-name">Mini Arcade de Piso y de Pared</div><div class="uc-author">by Anthony Diaz — Colombia</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Mini Arcade de Piso y de Pared</div><div class="uc-author">by Anthony Diaz — Colombia</div></div>
 </div>
 <div class="uc-card" onclick="openCab(22)" title="Click for more photos and details">
 <img src="files/usercabs/mini_pacmame_wavey1.jpg" alt="Mini PacMame" loading="lazy">
-<div class="uc-info"><div class="uc-name">Mini PacMame</div><div class="uc-author">by WaVeY</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Mini PacMame</div><div class="uc-author">by WaVeY</div></div>
 </div>
 <div class="uc-card" onclick="openCab(23)" title="Click for more photos and details">
 <img src="files/usercabs/monster_arcade_dna_disturber1.jpg" alt="MONSTER ARCADE" loading="lazy">
-<div class="uc-info"><div class="uc-name">MONSTER ARCADE</div><div class="uc-author">by Dna Disturber</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">MONSTER ARCADE</div><div class="uc-author">by Dna Disturber</div></div>
 </div>
 <div class="uc-card" onclick="openCab(24)" title="Click for more photos and details">
 <img src="files/usercabs/nanocade_lokesen1.jpg" alt="Nanocade" loading="lazy">
-<div class="uc-info"><div class="uc-name">Nanocade</div><div class="uc-author">by Lokesen</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Nanocade</div><div class="uc-author">by Lokesen</div></div>
 </div>
 <div class="uc-card" onclick="openCab(25)" title="Click for more photos and details">
 <img src="files/usercabs/retroarcade_wolfsoft1.jpg" alt="Retroarcade" loading="lazy">
-<div class="uc-info"><div class="uc-name">Retroarcade</div><div class="uc-author">by wolfsoft</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Retroarcade</div><div class="uc-author">by wolfsoft</div></div>
 </div>
 <div class="uc-card" onclick="openCab(26)" title="Click for more photos and details">
 <img src="files/usercabs/richie_tron_2000__retrokid1.jpg" alt="Richie Tron 2000" loading="lazy">
-<div class="uc-info"><div class="uc-name">Richie Tron 2000</div><div class="uc-author">by Retrokid</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Richie Tron 2000</div><div class="uc-author">by Retrokid</div></div>
 </div>
 <div class="uc-card" onclick="openCab(27)" title="Click for more photos and details">
 <img src="files/usercabs/samurai_cabinet_spear_of_destiny1.jpg" alt="Samurai Cabinet" loading="lazy">
-<div class="uc-info"><div class="uc-name">Samurai Cabinet</div><div class="uc-author">by Spear of Destiny</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Samurai Cabinet</div><div class="uc-author">by Spear of Destiny</div></div>
 </div>
 <div class="uc-card" onclick="openCab(28)" title="Click for more photos and details">
 <img src="files/usercabs/space_fractals_cab_space_fractal.jpg" alt="Space Fractal's Cab" loading="lazy">
@@ -175,11 +179,11 @@
 </div>
 <div class="uc-card" onclick="openCab(31)" title="Click for more photos and details">
 <img src="files/usercabs/tron_markus_kevin_flynn_hughes1.jpg" alt="Tron" loading="lazy">
-<div class="uc-info"><div class="uc-name">Tron</div><div class="uc-author">by Markus (Kevin Flynn) Hughes</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Tron</div><div class="uc-author">by Markus (Kevin Flynn) Hughes</div></div>
 </div>
 <div class="uc-card" onclick="openCab(32)" title="Click for more photos and details">
 <img src="files/usercabs/tron_markus_hughes1.jpg" alt="Tron (Updated)" loading="lazy">
-<div class="uc-info"><div class="uc-name">Tron (Updated)</div><div class="uc-author">by Markus Hughes</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Tron (Updated)</div><div class="uc-author">by Markus Hughes</div></div>
 </div>
 <div class="uc-card" onclick="openCab(33)" title="Click for more photos and details">
 <img src="files/usercabs/universal_cab_swindus.jpg" alt="Universal Cab" loading="lazy">
@@ -187,7 +191,7 @@
 </div>
 <div class="uc-card" onclick="openCab(34)" title="Click for more photos and details">
 <img src="files/usercabs/videogame_mrt1.jpg" alt="Videogame" loading="lazy">
-<div class="uc-info"><div class="uc-name">Videogame</div><div class="uc-author">by Mr.T</div></div>
+<div class="uc-info"><span class="uc-photo-count">📷 2</span><div class="uc-name">Videogame</div><div class="uc-author">by Mr.T</div></div>
 </div>
 <div class="uc-card" onclick="openCab(35)" title="Click for more photos and details">
 <img src="files/usercabs/wall_mounted_cab_swindus.jpg" alt="Wall Mounted Cab" loading="lazy">
