@@ -1,17 +1,248 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>MaLa Frontend :: User Cabinets</title><link rel="stylesheet" href="style.css"><style>.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.1rem;margin:1rem 0}.cc{background:var(--panel);border:1px solid var(--border);border-top:3px solid var(--neon-m);border-radius:0 0 4px 4px;overflow:hidden}.ci{display:flex;background:#000;min-height:70px}.ci img{flex:1;max-height:130px;object-fit:cover;filter:saturate(.8);display:block}.cb{padding:.65rem .85rem}.cn{font-family:'Orbitron',sans-serif;font-size:.82rem;color:var(--neon-m);margin-bottom:.15rem}.ca{font-size:.72rem;color:var(--neon-y);margin-bottom:.35rem}.cd{font-size:.76rem;color:var(--text-dim);line-height:1.55}</style></head><body><header><div class="site-title">MaLa</div><div class="site-subtitle">Multi Emulator Front-End &nbsp;::&nbsp; Arcade Cabinet Software</div></header><nav>
-  <div class="nav-inner nav-row1"><a href="index.html">About</a><a href="download.html">Download</a><a href="screenshots.html">Screenshots</a><a href="hardware.html">Hardware</a><a href="layouts.html">Layouts</a><a href="plugins.html">Plugins</a></div>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MaLa Frontend :: User Cabinets</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.uc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
+.uc-card{background:var(--panel);border:1px solid var(--border);border-top:3px solid var(--neon-m);border-radius:0 0 4px 4px;overflow:hidden;cursor:pointer;transition:box-shadow .2s,transform .2s}
+.uc-card:hover{box-shadow:0 0 20px rgba(255,0,170,.4);transform:translateY(-2px)}
+.uc-card img{width:100%;height:160px;object-fit:cover;display:block;filter:saturate(.8);transition:filter .2s}
+.uc-card:hover img{filter:saturate(1.1)}
+.uc-info{padding:.6rem .75rem}
+.uc-name{font-family:'Orbitron',sans-serif;font-size:.75rem;color:var(--neon-m);margin-bottom:.2rem}
+.uc-author{font-size:.72rem;color:var(--neon-y)}
+
+/* Modal */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:10000;align-items:center;justify-content:center;padding:1rem}
+.modal-overlay.open{display:flex}
+.modal-box{background:var(--bg2);border:1px solid var(--border);border-top:3px solid var(--neon-m);border-radius:0 0 8px 8px;max-width:800px;width:100%;max-height:90vh;overflow-y:auto;position:relative}
+.modal-close{position:absolute;top:.75rem;right:.75rem;font-family:'Press Start 2P',monospace;font-size:.6rem;color:var(--neon-r);background:transparent;border:1px solid var(--neon-r);padding:.4rem .6rem;cursor:pointer;z-index:1}
+.modal-close:hover{background:rgba(255,68,68,.15)}
+.modal-imgs{display:flex;flex-wrap:wrap;gap:.5rem;padding:1rem;background:#000}
+.modal-imgs img{flex:1;min-width:200px;max-height:350px;object-fit:contain;display:block}
+.modal-body{padding:1.25rem 1.5rem}
+.modal-title{font-family:'Orbitron',sans-serif;font-size:1.1rem;color:var(--neon-m);margin-bottom:.3rem}
+.modal-author{font-size:.82rem;color:var(--neon-y);margin-bottom:.75rem}
+.modal-desc{font-size:.88rem;color:var(--text);line-height:1.7}
+</style>
+</head>
+<body>
+<header><div class="site-title">MaLa</div><div class="site-subtitle">Multi Emulator Front-End &nbsp;::&nbsp; Arcade Cabinet Software</div></header>
+<nav>
+  <div class="nav-inner nav-row1"><a href="index.html" >About</a><a href="download.html">Download</a><a href="screenshots.html">Screenshots</a><a href="hardware.html">Hardware</a><a href="layouts.html">Layouts</a><a href="plugins.html">Plugins</a></div>
   <div class="nav-inner"><a href="presets.html">Emu Presets</a><a href="history.html">History</a><a href="wip.html">WIP</a><a href="docs.html">Docs</a><a href="usercabs.html" class="active">User Cabs</a><a href="links.html">Links</a><a href="https://github.com/DrLoader/MaLa-Releases" target="_blank">GitHub</a><a href="http://forum.arcadecontrols.com/index.php/board,43.0.html" target="_blank">Forum</a></div>
-</nav><div class="wrapper"><aside class="sidebar"></aside><main><h1>User Cabinets</h1>
-<div class="info-box" style="border-color:rgba(0,229,255,.3);background:rgba(0,229,255,.04);margin-bottom:1.5rem">
-<span class="info-label">► SUBMIT YOUR WORK</span>
-Email a share link (Google Drive, OneDrive or WeTransfer) along with your name, a description and a screenshot to <a href="mailto:submissions@malafe.net">submissions@malafe.net</a> — accepted submissions will be added to the site.
+</nav>
+<div class="wrapper">
+<aside class="sidebar">
+  <div class="sidebar-section">
+    <div class="sidebar-heading">Submit Your Cab</div>
+    <p>Email a share link with photos and a description to <a href="mailto:submissions@malafe.net">submissions@malafe.net</a> to be featured here.</p>
+  </div>
+</aside>
+<main>
+  <h1>User Cabinets</h1>
+  <div class="info-box" style="border-color:rgba(0,229,255,.3);background:rgba(0,229,255,.04);margin-bottom:1.5rem">
+    <span class="info-label">► SUBMIT YOUR WORK</span>
+    Email a share link (Google Drive, OneDrive or WeTransfer) along with your name, a description and a screenshot to <a href="mailto:submissions@malafe.net">submissions@malafe.net</a> — accepted submissions will be added to the site.
+  </div>
+  <p>Real arcade cabinets from the MaLa community around the world. <strong>Click any cabinet</strong> to see all photos and details.</p>
+  <div class="uc-grid">
+<div class="uc-card" onclick="openCab(0)" title="Click for more photos and details">
+<img src="files/usercabs/the_mame_table_loadman.jpg" alt="The MAME Table" loading="lazy">
+<div class="uc-info"><div class="uc-name">The MAME Table</div><div class="uc-author">by Loadman — Australia</div></div>
 </div>
-<p>Real arcade cabinets from the MaLa community around the world.</p><div class="cg"><div class="cc"><div class="ci"><img src="files/usercabs/the_mame_table_loadman.jpg" alt="The MAME Table"></div><div class="cb"><div class="cn">The MAME Table</div><div class="ca">by Loadman &mdash; Australia</div><div class="cd">Two-sided table with two sets of controls. AMD XP, 1GB RAM. MaLa Hardware drives LCD and LEDs.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/adams_arcade_machine__party_starter_adamc.jpg" alt="Adams Arcade &amp; Party Starter"></div><div class="cb"><div class="cn">Adams Arcade &amp; Party Starter</div><div class="ca">by AdamC</div><div class="cd">MAME and Gens for Sega games. Jukebox runs SKJukebox, Ultrastar Deluxe, Frets on Fire and glTRON.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/arcade_mini_pacmangalaxian__guiga_atomorx1.jpg" alt="Arcade Mini Pacman/Galaxian"><img src="files/usercabs/arcade_mini_pacmangalaxian__guiga_atomorx2.jpg" alt="Arcade Mini Pacman/Galaxian"></div><div class="cb"><div class="cn">Arcade Mini Pacman/Galaxian</div><div class="ca">by Guiga (atomo-rx) &mdash; Brazil</div><div class="cd">1m x 50 x 40cm mini arcade. Athlon XP 1.8, CRT 15", MaLa 1.74. 7 emulators.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/atomic_mame_bartop_nickelo1.jpg" alt="Atomic Mame Bartop"></div><div class="cb"><div class="cn">Atomic Mame Bartop</div><div class="ca">by nickelo</div><div class="cd">Portable bartop with removable controllers. 21" Sony Trinitron. Athlon 2x, SSD. RetrOS x64 and MaLa 1.74.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/basement_barcade_capt60691.jpg" alt="Basement Barcade"></div><div class="cb"><div class="cn">Basement Barcade</div><div class="ca">by capt6069</div><div class="cd">Custom built for 2-player horizontal and vertical play. Tall enough to integrate in the bar. P4 2.8GHz.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/bergers_mame_cabinet_gerardo_aka_berger1.jpg" alt="Berger's MAME Cabinet"><img src="files/usercabs/bergers_mame_cabinet_gerardo_aka_berger2.jpg" alt="Berger's MAME Cabinet"></div><div class="cb"><div class="cn">Berger's MAME Cabinet</div><div class="ca">by Gerardo (aka Berger)</div><div class="cd">P4 1.9GHz, nVidia FX5200, Ultimarc IPAC FS32, TFT 19" 1280x1024. MAME 0.133 and MaLa 1.05.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/chavos_cabinet_lllborusslll1.jpg" alt="Chavo's Cabinet"><img src="files/usercabs/chavos_cabinet_lllborusslll2.jpg" alt="Chavo's Cabinet"></div><div class="cb"><div class="cn">Chavo's Cabinet</div><div class="ca">by lllBorusslll</div><div class="cd">2 player cabinet running MaLa with MAME.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/cocktail_sadosp1.jpg" alt="Cocktail"><img src="files/usercabs/cocktail_sadosp2.jpg" alt="Cocktail"></div><div class="cb"><div class="cn">Cocktail</div><div class="ca">by sadosp</div><div class="cd">Cocktail machine. MAME, Atari 2600, NES, SNES and Genesis. Original 19" arcade monitor, Ultimarc ArcadeVGA.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/first_games_light_nickelo1.jpg" alt="First Games Light"><img src="files/usercabs/first_games_light_nickelo2.jpg" alt="First Games Light"></div><div class="cb"><div class="cn">First Games Light</div><div class="ca">by nickelo</div><div class="cd">Spanish generic machine 100% restored. Hantarex MTC9110 25", P4 3.2GHz. Boots in 15-20 seconds from Compact Flash.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/heinis_time_warp_el_sattlero1.jpg" alt="Heini's Time Warp"><img src="files/usercabs/heinis_time_warp_el_sattlero2.jpg" alt="Heini's Time Warp"></div><div class="cb"><div class="cn">Heini's Time Warp</div><div class="ca">by El Sattlero</div><div class="cd">LED buttons, Spinner, Trackball, 2 Lightguns, 25" Hantarex, 90° rotatable. Ultimarc J-Pac and ArcadeVGA.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/house_multi_arcade_cabinet_ver_10_from_brazil_fabinho1.jpg" alt="House Multi Arcade Ver. 1.0"><img src="files/usercabs/house_multi_arcade_cabinet_ver_10_from_brazil_fabinho2.jpg" alt="House Multi Arcade Ver. 1.0"></div><div class="cb"><div class="cn">House Multi Arcade Ver. 1.0</div><div class="ca">by Fabinho &mdash; Brazil</div><div class="cd">AMD Athlon 64 X2 4600+, 2GB RAM, 29" Monitor 15kHz. MaLa v1.05 and MAME v0.129.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/irish_shamrock_wave81.jpg" alt="Irish Shamrock"></div><div class="cb"><div class="cn">Irish Shamrock</div><div class="ca">by wave8</div><div class="cd">Custom Mini-ITX cabinet with Intel Atom and 2GB RAM running MaLa.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/jumbo_quadro_deluxe_ede1.jpg" alt="Jumbo Quadro "Deluxe""></div><div class="cb"><div class="cn">Jumbo Quadro "Deluxe"</div><div class="ca">by EDE</div><div class="cd">Auto-rotating arcade monitor controlled by hardware and the MaLa RotateScreen plugin. P4 3GHz, JPAC/OptiPAC/AVGA2.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/kaptains_arcade_klassics_kaptainsteve1.jpg" alt="Kaptain's Arcade Klassics"></div><div class="cb"><div class="cn">Kaptain's Arcade Klassics</div><div class="ca">by kaptainsteve</div><div class="cd">Dynamo cabinet with Street Fighter control panel running MAME and MaLa.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/kaptains_kabinet_2_kaptainsteve1.jpg" alt="Kaptain's Kabinet 2"></div><div class="cb"><div class="cn">Kaptain's Kabinet 2</div><div class="ca">by KaptainSteve</div><div class="cd">Dynamo with joystick, buttons and trackball on Ultimarc interfaces. MaLa and MAME 126.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/kevins_custom_galaga_dj_unix1.jpg" alt="Kevin's Custom Galaga"></div><div class="cb"><div class="cn">Kevin's Custom Galaga</div><div class="ca">by DJ Unix</div><div class="cd">Scratch-built Galaga retaining the original look. Running MaLa with Speech and UltraStick Mapper plugins.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/lenths_arcade_machine_lenth1.jpg" alt="Lenths Arcade Machine"></div><div class="cb"><div class="cn">Lenths Arcade Machine</div><div class="ca">by Lenth</div><div class="cd">Work in progress. Aluminum stand powder-coated space blue, clear top visible, wireless video sender, 250W 6x9 speakers, cold cathode lighting inside.</div></div></div>
-<div class="cc"><div class="ci"><img src="files/usercabs/lightning_mame_cab_chris1.jpg" alt="Lightning MAME Cab"><img src="files/usercabs/lightning_mame_cab_chris2.jpg" alt="Lightning MAME Cab"></div><div class="cb"><div class="cn">Lightning MAME Cab</div><div class="ca">by Chris</div><div class="cd"><a href="http://www.youtube.com/watch?v=EQuMA5LnFWU" target="_blank">Watch on YouTube</a>.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/lsfd_arcade_capt60691.jpg" alt="LSFD Arcade"></div><div class="cb"><div class="cn">LSFD Arcade</div><div class="ca">by capt6069</div><div class="cd">Built for the fire house. Trash-picked Trivia Whiz cab with MAME, NES, SNES, Genesis, TG16, GBA and GB.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/mala_on_slik_stik_cab_amiga20001.jpg" alt="MALA on Slik Stik Cab"></div><div class="cb"><div class="cn">MALA on Slik Stik Cab</div><div class="ca">by amiga2000</div><div class="cd">Standard MaLa layout with extensive arcade cab media. <a href="http://www.youtube.com/watch?v=PzwHWPM21J8" target="_blank">HD video on YouTube</a>.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/markcade_markran1.jpg" alt="Markcade"></div><div class="cb"><div class="cn">Markcade</div><div class="ca">by markran</div><div class="cd">P4 3.2GHz, ArcadeVGA, Wells Gardner 9400, RGB LED buttons and trackball, LEDWiz, Happ joysticks, Tornado Spinner. Custom LED animations.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/mini_arcade_de_piso_y_de_pared_anthony_diaz1.jpg" alt="Mini Arcade"><img src="files/usercabs/mini_arcade_de_piso_y_de_pared_anthony_diaz2.jpg" alt="Mini Arcade"></div><div class="cb"><div class="cn">Mini Arcade de Piso y de Pared</div><div class="ca">by Anthony Diaz &mdash; Colombia</div><div class="cd">Two models — one wall-mounted KOF themed, one floor standing. Athlon 64 X2 3800MHz, 4GB RAM, 320GB HDD, GeForce 512MB. Running WinXP, MAMEPGUI and MaLa. American joysticks and Zippy microswitches.</div></div></div>
-<div class="cc"><div class="ci"><img src="files/usercabs/mini_pacmame_wavey1.jpg" alt="Mini PacMame"><img src="files/usercabs/mini_pacmame_wavey2.jpg" alt="Mini PacMame"></div><div class="cb"><div class="cn">Mini PacMame</div><div class="ca">by WaVeY</div><div class="cd">3/4 size Pacman cabinet. Built from scratch in 3 weeks. MaLa frontend with 8000 MAME ROMs.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/monster_arcade_dna_disturber1.jpg" alt="MONSTER ARCADE"><img src="files/usercabs/monster_arcade_dna_disturber2.jpg" alt="MONSTER ARCADE"></div><div class="cb"><div class="cn">MONSTER ARCADE</div><div class="ca">by Dna Disturber</div><div class="cd">MaLa with LedBlinky plugin. Scrolling the game list plays the game video on a virtual cabinet matching the real one.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/nanocade_lokesen1.jpg" alt="Nanocade"><img src="files/usercabs/nanocade_lokesen2.jpg" alt="Nanocade"></div><div class="cb"><div class="cn">Nanocade</div><div class="ca">by Lokesen</div><div class="cd">Built from the Nanocade KIT — an acrylic micro MAME cabinet.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/retroarcade_wolfsoft1.jpg" alt="Retroarcade"><img src="files/usercabs/retroarcade_wolfsoft2.jpg" alt="Retroarcade"></div><div class="cb"><div class="cn">Retroarcade</div><div class="ca">by wolfsoft</div><div class="cd">Auto-rotating screen. LedBlinky for coloured buttons. Starcom plugin for rotation. 25" CRT or 21" LCD.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/richie_tron_2000__retrokid1.jpg" alt="Richie Tron 2000"><img src="files/usercabs/richie_tron_2000__retrokid2.jpg" alt="Richie Tron 2000"></div><div class="cb"><div class="cn">Richie Tron 2000</div><div class="ca">by Retrokid</div><div class="cd">Bartop with 17" monitor, Dell SX2700 PC, 4GB RAM. CNC cut panels. MaLa FE.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/samurai_cabinet_spear_of_destiny1.jpg" alt="Samurai Cabinet"><img src="files/usercabs/samurai_cabinet_spear_of_destiny2.jpg" alt="Samurai Cabinet"></div><div class="cb"><div class="cn">Samurai Cabinet</div><div class="ca">by Spear of Destiny</div><div class="cd">Built from an NFL Blitz machine with custom marquee and control panel artwork.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/space_fractals_cab_space_fractal.jpg" alt="Space Fractal's Cab"></div><div class="cb"><div class="cn">Space Fractal's Cab</div><div class="ca">by Space Fractal</div><div class="cd">Running MaLa with the U360 plugin.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/space_invaders_cocktail_jonno1.jpg" alt="Space Invaders Cocktail"></div><div class="cb"><div class="cn">Space Invaders Cocktail</div><div class="ca">by Jonno</div><div class="cd">First cab. Chose MaLa for better vertical layout support. AMD Athlon II X2 2.7GHz, 4GB RAM.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/takonis_maka_takoni.jpg" alt="Takoni's Maka"></div><div class="cb"><div class="cn">Takoni's Maka</div><div class="ca">by takoni</div><div class="cd">Original black Dandy cabinet rebuilt into a Galaga cabinet.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/tron_markus_kevin_flynn_hughes1.jpg" alt="Tron"><img src="files/usercabs/tron_markus_kevin_flynn_hughes2.jpg" alt="Tron"></div><div class="cb"><div class="cn">Tron</div><div class="ca">by Markus (Kevin Flynn) Hughes</div><div class="cd">Retro cab dedicated to the Tron movie and arcade game. Fluorescent paint, black lights, plexiglas.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/tron_markus_hughes1.jpg" alt="Tron Updated"><img src="files/usercabs/tron_markus_hughes2.jpg" alt="Tron Updated"></div><div class="cb"><div class="cn">Tron (Updated)</div><div class="ca">by Markus Hughes</div><div class="cd">Updated photos of Markus Hughes's Tron cabinet.</div></div></div>
-<div class="cc"><div class="ci"><img src="files/usercabs/universal_cab_swindus.jpg" alt="Universal Cab"></div><div class="cb"><div class="cn">Universal Cab</div><div class="ca">by Swindus</div><div class="cd">German universal cab with rotatable 28" real arcade monitor. AMD Sempron 2.8GHz, ArcadeVGA and J-Pac.</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/videogame_mrt1.jpg" alt="Videogame"><img src="files/usercabs/videogame_mrt2.jpg" alt="Videogame"></div><div class="cb"><div class="cn">Videogame</div><div class="ca">by Mr.T</div><div class="cd">JAMMA PLUS cab 175x85x65cm. Philips 25" FLAT, P4 2.8GHz, ArcadeVGA. Accepts Italian 500-lire coins!</div></div></div><div class="cc"><div class="ci"><img src="files/usercabs/wall_mounted_cab_swindus.jpg" alt="Wall Mounted Cab"></div><div class="cb"><div class="cn">Wall Mounted Cab</div><div class="ca">by Swindus</div><div class="cd">Rotatable 17" LCD with replaceable control panel. P III 650MHz, 512MB, Win98SE. MaLa Hardware for lit buttons.</div></div></div></div></main><aside class="sidebar sidebar-right"><div class="sidebar-section"><div class="sidebar-heading">About Author</div>
-<p>MaLa was conceived and written by Stefan 'swindus' Windus. Further development by Simon 'Loadman' Loader.</p></div>
-<div class="sidebar-section"><div class="sidebar-heading">Featured Cabs</div>
-<p style="color:var(--neon-g);font-family:'Orbitron',sans-serif;font-size:1.2rem;text-shadow:0 0 10px var(--neon-g)">35+</p>
-<p>Community cabinets from around the world running MaLa.</p></div></aside></div><footer><div class="footer-brand">MaLa Frontend</div>Copyright &copy; 2006&ndash;2026 Stefan Windus and Simon Loader</footer></body></html>
+<div class="uc-card" onclick="openCab(1)" title="Click for more photos and details">
+<img src="files/usercabs/adams_arcade_machine__party_starter_adamc.jpg" alt="Adams Arcade & Party Starter" loading="lazy">
+<div class="uc-info"><div class="uc-name">Adams Arcade & Party Starter</div><div class="uc-author">by AdamC</div></div>
+</div>
+<div class="uc-card" onclick="openCab(2)" title="Click for more photos and details">
+<img src="files/usercabs/arcade_mini_pacmangalaxian__guiga_atomorx1.jpg" alt="Arcade Mini Pacman/Galaxian" loading="lazy">
+<div class="uc-info"><div class="uc-name">Arcade Mini Pacman/Galaxian</div><div class="uc-author">by Guiga (atomo-rx) — Brazil</div></div>
+</div>
+<div class="uc-card" onclick="openCab(3)" title="Click for more photos and details">
+<img src="files/usercabs/atomic_mame_bartop_nickelo1.jpg" alt="Atomic Mame Bartop" loading="lazy">
+<div class="uc-info"><div class="uc-name">Atomic Mame Bartop</div><div class="uc-author">by nickelo</div></div>
+</div>
+<div class="uc-card" onclick="openCab(4)" title="Click for more photos and details">
+<img src="files/usercabs/basement_barcade_capt60691.jpg" alt="Basement Barcade" loading="lazy">
+<div class="uc-info"><div class="uc-name">Basement Barcade</div><div class="uc-author">by capt6069</div></div>
+</div>
+<div class="uc-card" onclick="openCab(5)" title="Click for more photos and details">
+<img src="files/usercabs/bergers_mame_cabinet_gerardo_aka_berger1.jpg" alt="Berger's MAME Cabinet" loading="lazy">
+<div class="uc-info"><div class="uc-name">Berger's MAME Cabinet</div><div class="uc-author">by Gerardo (aka Berger)</div></div>
+</div>
+<div class="uc-card" onclick="openCab(6)" title="Click for more photos and details">
+<img src="files/usercabs/chavos_cabinet_lllborusslll1.jpg" alt="Chavo's Cabinet" loading="lazy">
+<div class="uc-info"><div class="uc-name">Chavo's Cabinet</div><div class="uc-author">by lllBorusslll</div></div>
+</div>
+<div class="uc-card" onclick="openCab(7)" title="Click for more photos and details">
+<img src="files/usercabs/cocktail_sadosp1.jpg" alt="Cocktail" loading="lazy">
+<div class="uc-info"><div class="uc-name">Cocktail</div><div class="uc-author">by sadosp</div></div>
+</div>
+<div class="uc-card" onclick="openCab(8)" title="Click for more photos and details">
+<img src="files/usercabs/first_games_light_nickelo1.jpg" alt="First Games Light" loading="lazy">
+<div class="uc-info"><div class="uc-name">First Games Light</div><div class="uc-author">by nickelo</div></div>
+</div>
+<div class="uc-card" onclick="openCab(9)" title="Click for more photos and details">
+<img src="files/usercabs/heinis_time_warp_el_sattlero1.jpg" alt="Heini's Time Warp" loading="lazy">
+<div class="uc-info"><div class="uc-name">Heini's Time Warp</div><div class="uc-author">by El Sattlero</div></div>
+</div>
+<div class="uc-card" onclick="openCab(10)" title="Click for more photos and details">
+<img src="files/usercabs/house_multi_arcade_cabinet_ver_10_from_brazil_fabinho1.jpg" alt="House Multi Arcade Ver. 1.0" loading="lazy">
+<div class="uc-info"><div class="uc-name">House Multi Arcade Ver. 1.0</div><div class="uc-author">by Fabinho — Brazil</div></div>
+</div>
+<div class="uc-card" onclick="openCab(11)" title="Click for more photos and details">
+<img src="files/usercabs/irish_shamrock_wave81.jpg" alt="Irish Shamrock" loading="lazy">
+<div class="uc-info"><div class="uc-name">Irish Shamrock</div><div class="uc-author">by wave8</div></div>
+</div>
+<div class="uc-card" onclick="openCab(12)" title="Click for more photos and details">
+<img src="files/usercabs/jumbo_quadro_deluxe_ede1.jpg" alt="Jumbo Quadro "Deluxe"" loading="lazy">
+<div class="uc-info"><div class="uc-name">Jumbo Quadro "Deluxe"</div><div class="uc-author">by EDE</div></div>
+</div>
+<div class="uc-card" onclick="openCab(13)" title="Click for more photos and details">
+<img src="files/usercabs/kaptains_arcade_klassics_kaptainsteve1.jpg" alt="Kaptain's Arcade Klassics" loading="lazy">
+<div class="uc-info"><div class="uc-name">Kaptain's Arcade Klassics</div><div class="uc-author">by kaptainsteve</div></div>
+</div>
+<div class="uc-card" onclick="openCab(14)" title="Click for more photos and details">
+<img src="files/usercabs/kaptains_kabinet_2_kaptainsteve1.jpg" alt="Kaptain's Kabinet 2" loading="lazy">
+<div class="uc-info"><div class="uc-name">Kaptain's Kabinet 2</div><div class="uc-author">by KaptainSteve</div></div>
+</div>
+<div class="uc-card" onclick="openCab(15)" title="Click for more photos and details">
+<img src="files/usercabs/kevins_custom_galaga_dj_unix1.jpg" alt="Kevin's Custom Galaga" loading="lazy">
+<div class="uc-info"><div class="uc-name">Kevin's Custom Galaga</div><div class="uc-author">by DJ Unix</div></div>
+</div>
+<div class="uc-card" onclick="openCab(16)" title="Click for more photos and details">
+<img src="files/usercabs/lenths_arcade_machine_lenth1.jpg" alt="Lenths Arcade Machine" loading="lazy">
+<div class="uc-info"><div class="uc-name">Lenths Arcade Machine</div><div class="uc-author">by Lenth</div></div>
+</div>
+<div class="uc-card" onclick="openCab(17)" title="Click for more photos and details">
+<img src="files/usercabs/lightning_mame_cab_chris1.jpg" alt="Lightning MAME Cab" loading="lazy">
+<div class="uc-info"><div class="uc-name">Lightning MAME Cab</div><div class="uc-author">by Chris</div></div>
+</div>
+<div class="uc-card" onclick="openCab(18)" title="Click for more photos and details">
+<img src="files/usercabs/lsfd_arcade_capt60691.jpg" alt="LSFD Arcade" loading="lazy">
+<div class="uc-info"><div class="uc-name">LSFD Arcade</div><div class="uc-author">by capt6069</div></div>
+</div>
+<div class="uc-card" onclick="openCab(19)" title="Click for more photos and details">
+<img src="files/usercabs/mala_on_slik_stik_cab_amiga20001.jpg" alt="MALA on Slik Stik Cab" loading="lazy">
+<div class="uc-info"><div class="uc-name">MALA on Slik Stik Cab</div><div class="uc-author">by amiga2000</div></div>
+</div>
+<div class="uc-card" onclick="openCab(20)" title="Click for more photos and details">
+<img src="files/usercabs/markcade_markran1.jpg" alt="Markcade" loading="lazy">
+<div class="uc-info"><div class="uc-name">Markcade</div><div class="uc-author">by markran</div></div>
+</div>
+<div class="uc-card" onclick="openCab(21)" title="Click for more photos and details">
+<img src="files/usercabs/mini_arcade_de_piso_y_de_pared_anthony_diaz1.jpg" alt="Mini Arcade de Piso y de Pared" loading="lazy">
+<div class="uc-info"><div class="uc-name">Mini Arcade de Piso y de Pared</div><div class="uc-author">by Anthony Diaz — Colombia</div></div>
+</div>
+<div class="uc-card" onclick="openCab(22)" title="Click for more photos and details">
+<img src="files/usercabs/mini_pacmame_wavey1.jpg" alt="Mini PacMame" loading="lazy">
+<div class="uc-info"><div class="uc-name">Mini PacMame</div><div class="uc-author">by WaVeY</div></div>
+</div>
+<div class="uc-card" onclick="openCab(23)" title="Click for more photos and details">
+<img src="files/usercabs/monster_arcade_dna_disturber1.jpg" alt="MONSTER ARCADE" loading="lazy">
+<div class="uc-info"><div class="uc-name">MONSTER ARCADE</div><div class="uc-author">by Dna Disturber</div></div>
+</div>
+<div class="uc-card" onclick="openCab(24)" title="Click for more photos and details">
+<img src="files/usercabs/nanocade_lokesen1.jpg" alt="Nanocade" loading="lazy">
+<div class="uc-info"><div class="uc-name">Nanocade</div><div class="uc-author">by Lokesen</div></div>
+</div>
+<div class="uc-card" onclick="openCab(25)" title="Click for more photos and details">
+<img src="files/usercabs/retroarcade_wolfsoft1.jpg" alt="Retroarcade" loading="lazy">
+<div class="uc-info"><div class="uc-name">Retroarcade</div><div class="uc-author">by wolfsoft</div></div>
+</div>
+<div class="uc-card" onclick="openCab(26)" title="Click for more photos and details">
+<img src="files/usercabs/richie_tron_2000__retrokid1.jpg" alt="Richie Tron 2000" loading="lazy">
+<div class="uc-info"><div class="uc-name">Richie Tron 2000</div><div class="uc-author">by Retrokid</div></div>
+</div>
+<div class="uc-card" onclick="openCab(27)" title="Click for more photos and details">
+<img src="files/usercabs/samurai_cabinet_spear_of_destiny1.jpg" alt="Samurai Cabinet" loading="lazy">
+<div class="uc-info"><div class="uc-name">Samurai Cabinet</div><div class="uc-author">by Spear of Destiny</div></div>
+</div>
+<div class="uc-card" onclick="openCab(28)" title="Click for more photos and details">
+<img src="files/usercabs/space_fractals_cab_space_fractal.jpg" alt="Space Fractal's Cab" loading="lazy">
+<div class="uc-info"><div class="uc-name">Space Fractal's Cab</div><div class="uc-author">by Space Fractal</div></div>
+</div>
+<div class="uc-card" onclick="openCab(29)" title="Click for more photos and details">
+<img src="files/usercabs/space_invaders_cocktail_jonno1.jpg" alt="Space Invaders Cocktail" loading="lazy">
+<div class="uc-info"><div class="uc-name">Space Invaders Cocktail</div><div class="uc-author">by Jonno</div></div>
+</div>
+<div class="uc-card" onclick="openCab(30)" title="Click for more photos and details">
+<img src="files/usercabs/takonis_maka_takoni.jpg" alt="Takoni's Maka" loading="lazy">
+<div class="uc-info"><div class="uc-name">Takoni's Maka</div><div class="uc-author">by takoni</div></div>
+</div>
+<div class="uc-card" onclick="openCab(31)" title="Click for more photos and details">
+<img src="files/usercabs/tron_markus_kevin_flynn_hughes1.jpg" alt="Tron" loading="lazy">
+<div class="uc-info"><div class="uc-name">Tron</div><div class="uc-author">by Markus (Kevin Flynn) Hughes</div></div>
+</div>
+<div class="uc-card" onclick="openCab(32)" title="Click for more photos and details">
+<img src="files/usercabs/tron_markus_hughes1.jpg" alt="Tron (Updated)" loading="lazy">
+<div class="uc-info"><div class="uc-name">Tron (Updated)</div><div class="uc-author">by Markus Hughes</div></div>
+</div>
+<div class="uc-card" onclick="openCab(33)" title="Click for more photos and details">
+<img src="files/usercabs/universal_cab_swindus.jpg" alt="Universal Cab" loading="lazy">
+<div class="uc-info"><div class="uc-name">Universal Cab</div><div class="uc-author">by Swindus</div></div>
+</div>
+<div class="uc-card" onclick="openCab(34)" title="Click for more photos and details">
+<img src="files/usercabs/videogame_mrt1.jpg" alt="Videogame" loading="lazy">
+<div class="uc-info"><div class="uc-name">Videogame</div><div class="uc-author">by Mr.T</div></div>
+</div>
+<div class="uc-card" onclick="openCab(35)" title="Click for more photos and details">
+<img src="files/usercabs/wall_mounted_cab_swindus.jpg" alt="Wall Mounted Cab" loading="lazy">
+<div class="uc-info"><div class="uc-name">Wall Mounted Cab</div><div class="uc-author">by Swindus</div></div>
+</div>
+  </div>
+</main>
+<aside class="sidebar sidebar-right">
+  <div class="sidebar-section">
+    <div class="sidebar-heading">About Author</div>
+    <p>MaLa was conceived and written by Stefan 'swindus' Windus. Further development by Simon 'Loadman' Loader.</p>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-heading">Featured Cabs</div>
+    <p style="color:var(--neon-g);font-family:'Orbitron',sans-serif;font-size:1.2rem;text-shadow:0 0 10px var(--neon-g)">35+</p>
+    <p>Community cabinets from around the world running MaLa.</p>
+  </div>
+</aside>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal" onclick="closeIfOverlay(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeCab()">✕ CLOSE</button>
+    <div class="modal-imgs" id="modal-imgs"></div>
+    <div class="modal-body">
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-author" id="modal-author"></div>
+      <div class="modal-desc" id="modal-desc"></div>
+    </div>
+  </div>
+</div>
+
+<footer><div class="footer-brand">MaLa Frontend</div>MaLa Frontend &copy; 2006&ndash;2026 Stefan Windus and Simon Loader</footer>
+
+<script>
+const cabs = [{"name": "The MAME Table", "author": "by Loadman \u2014 Australia", "desc": "Two-sided table with two sets of controls. AMD XP, 1GB RAM. IOWarrior Hardware drives LCD and LEDs.", "imgs": ["files/usercabs/the_mame_table_loadman.jpg"]}, {"name": "Adams Arcade & Party Starter", "author": "by AdamC", "desc": "MAME and Gens for Sega games. Jukebox runs SKJukebox, Ultrastar Deluxe, Frets on Fire and glTRON.", "imgs": ["files/usercabs/adams_arcade_machine__party_starter_adamc.jpg"]}, {"name": "Arcade Mini Pacman/Galaxian", "author": "by Guiga (atomo-rx) \u2014 Brazil", "desc": "1m x 50 x 40cm mini arcade. Athlon XP 1.8, CRT 15\", MaLa 1.74. 7 emulators.", "imgs": ["files/usercabs/arcade_mini_pacmangalaxian__guiga_atomorx1.jpg", "files/usercabs/arcade_mini_pacmangalaxian__guiga_atomorx2.jpg"]}, {"name": "Atomic Mame Bartop", "author": "by nickelo", "desc": "Portable bartop with removable controllers. 21\" Sony Trinitron. Athlon 2x, SSD. RetrOS x64 and MaLa 1.74.", "imgs": ["files/usercabs/atomic_mame_bartop_nickelo1.jpg"]}, {"name": "Basement Barcade", "author": "by capt6069", "desc": "Custom built for 2-player horizontal and vertical play. Tall enough to integrate in the bar. P4 2.8GHz.", "imgs": ["files/usercabs/basement_barcade_capt60691.jpg"]}, {"name": "Berger's MAME Cabinet", "author": "by Gerardo (aka Berger)", "desc": "P4 1.9GHz, nVidia FX5200, Ultimarc IPAC FS32, TFT 19\" 1280x1024. MAME 0.133 and MaLa 1.05.", "imgs": ["files/usercabs/bergers_mame_cabinet_gerardo_aka_berger1.jpg", "files/usercabs/bergers_mame_cabinet_gerardo_aka_berger2.jpg"]}, {"name": "Chavo's Cabinet", "author": "by lllBorusslll", "desc": "2 player cabinet running MaLa with MAME.", "imgs": ["files/usercabs/chavos_cabinet_lllborusslll1.jpg", "files/usercabs/chavos_cabinet_lllborusslll2.jpg"]}, {"name": "Cocktail", "author": "by sadosp", "desc": "Cocktail machine. MAME, Atari 2600, NES, SNES and Genesis. Original 19\" arcade monitor, Ultimarc ArcadeVGA.", "imgs": ["files/usercabs/cocktail_sadosp1.jpg", "files/usercabs/cocktail_sadosp2.jpg"]}, {"name": "First Games Light", "author": "by nickelo", "desc": "Spanish generic machine 100% restored. Hantarex MTC9110 25\", P4 3.2GHz. Boots in 15-20 seconds from Compact Flash.", "imgs": ["files/usercabs/first_games_light_nickelo1.jpg", "files/usercabs/first_games_light_nickelo2.jpg"]}, {"name": "Heini's Time Warp", "author": "by El Sattlero", "desc": "LED buttons, Spinner, Trackball, 2 Lightguns, 25\" Hantarex, 90\u00b0 rotatable. Ultimarc J-Pac and ArcadeVGA.", "imgs": ["files/usercabs/heinis_time_warp_el_sattlero1.jpg", "files/usercabs/heinis_time_warp_el_sattlero2.jpg"]}, {"name": "House Multi Arcade Ver. 1.0", "author": "by Fabinho \u2014 Brazil", "desc": "AMD Athlon 64 X2 4600+, 2GB RAM, 29\" Monitor 15kHz. MaLa v1.05 and MAME v0.129.", "imgs": ["files/usercabs/house_multi_arcade_cabinet_ver_10_from_brazil_fabinho1.jpg", "files/usercabs/house_multi_arcade_cabinet_ver_10_from_brazil_fabinho2.jpg"]}, {"name": "Irish Shamrock", "author": "by wave8", "desc": "Custom Mini-ITX cabinet with Intel Atom and 2GB RAM running MaLa.", "imgs": ["files/usercabs/irish_shamrock_wave81.jpg"]}, {"name": "Jumbo Quadro \"Deluxe\"", "author": "by EDE", "desc": "Auto-rotating arcade monitor controlled by hardware and the MaLa RotateScreen plugin. P4 3GHz, JPAC/OptiPAC/AVGA2.", "imgs": ["files/usercabs/jumbo_quadro_deluxe_ede1.jpg"]}, {"name": "Kaptain's Arcade Klassics", "author": "by kaptainsteve", "desc": "Dynamo cabinet with Street Fighter control panel running MAME and MaLa.", "imgs": ["files/usercabs/kaptains_arcade_klassics_kaptainsteve1.jpg"]}, {"name": "Kaptain's Kabinet 2", "author": "by KaptainSteve", "desc": "Dynamo with joystick, buttons and trackball on Ultimarc interfaces. MaLa and MAME 126.", "imgs": ["files/usercabs/kaptains_kabinet_2_kaptainsteve1.jpg"]}, {"name": "Kevin's Custom Galaga", "author": "by DJ Unix", "desc": "Scratch-built Galaga retaining the original look. Running MaLa with Speech and UltraStick Mapper plugins.", "imgs": ["files/usercabs/kevins_custom_galaga_dj_unix1.jpg"]}, {"name": "Lenths Arcade Machine", "author": "by Lenth", "desc": "Work in progress. Aluminum stand powder-coated space blue, clear top visible, wireless video sender, 250W 6x9 speakers, cold cathode lighting inside.", "imgs": ["files/usercabs/lenths_arcade_machine_lenth1.jpg"]}, {"name": "Lightning MAME Cab", "author": "by Chris", "desc": "Watch the cabinet in action on YouTube.", "imgs": ["files/usercabs/lightning_mame_cab_chris1.jpg", "files/usercabs/lightning_mame_cab_chris2.jpg"]}, {"name": "LSFD Arcade", "author": "by capt6069", "desc": "Built for the fire house. Trash-picked Trivia Whiz cab with MAME, NES, SNES, Genesis, TG16, GBA and GB.", "imgs": ["files/usercabs/lsfd_arcade_capt60691.jpg"]}, {"name": "MALA on Slik Stik Cab", "author": "by amiga2000", "desc": "Standard MaLa layout with extensive arcade cab media.", "imgs": ["files/usercabs/mala_on_slik_stik_cab_amiga20001.jpg"]}, {"name": "Markcade", "author": "by markran", "desc": "P4 3.2GHz, ArcadeVGA, Wells Gardner 9400, RGB LED buttons and trackball, LEDWiz, Happ joysticks, Tornado Spinner.", "imgs": ["files/usercabs/markcade_markran1.jpg"]}, {"name": "Mini Arcade de Piso y de Pared", "author": "by Anthony Diaz \u2014 Colombia", "desc": "Two models \u2014 wall-mounted KOF themed and floor standing. Athlon 64 X2 3800MHz, 4GB RAM. Running WinXP, MAMEPGUI and MaLa.", "imgs": ["files/usercabs/mini_arcade_de_piso_y_de_pared_anthony_diaz1.jpg", "files/usercabs/mini_arcade_de_piso_y_de_pared_anthony_diaz2.jpg"]}, {"name": "Mini PacMame", "author": "by WaVeY", "desc": "3/4 size Pacman cabinet built from scratch in 3 weeks. MaLa frontend with 8000 MAME ROMs.", "imgs": ["files/usercabs/mini_pacmame_wavey1.jpg", "files/usercabs/mini_pacmame_wavey2.jpg"]}, {"name": "MONSTER ARCADE", "author": "by Dna Disturber", "desc": "MaLa with LedBlinky plugin. Scrolling the game list plays the game video on a virtual cabinet matching the real one.", "imgs": ["files/usercabs/monster_arcade_dna_disturber1.jpg", "files/usercabs/monster_arcade_dna_disturber2.jpg"]}, {"name": "Nanocade", "author": "by Lokesen", "desc": "Built from the Nanocade KIT \u2014 an acrylic micro MAME cabinet.", "imgs": ["files/usercabs/nanocade_lokesen1.jpg", "files/usercabs/nanocade_lokesen2.jpg"]}, {"name": "Retroarcade", "author": "by wolfsoft", "desc": "Auto-rotating screen. LedBlinky for coloured buttons. Starcom plugin for rotation. 25\" CRT or 21\" LCD.", "imgs": ["files/usercabs/retroarcade_wolfsoft1.jpg", "files/usercabs/retroarcade_wolfsoft2.jpg"]}, {"name": "Richie Tron 2000", "author": "by Retrokid", "desc": "Bartop with 17\" monitor, Dell SX2700 PC, 4GB RAM. CNC cut panels. MaLa FE.", "imgs": ["files/usercabs/richie_tron_2000__retrokid1.jpg", "files/usercabs/richie_tron_2000__retrokid2.jpg"]}, {"name": "Samurai Cabinet", "author": "by Spear of Destiny", "desc": "Built from an NFL Blitz machine with custom marquee and control panel artwork.", "imgs": ["files/usercabs/samurai_cabinet_spear_of_destiny1.jpg", "files/usercabs/samurai_cabinet_spear_of_destiny2.jpg"]}, {"name": "Space Fractal's Cab", "author": "by Space Fractal", "desc": "Running MaLa with the U360 plugin.", "imgs": ["files/usercabs/space_fractals_cab_space_fractal.jpg"]}, {"name": "Space Invaders Cocktail", "author": "by Jonno", "desc": "First cab. Chose MaLa for better vertical layout support. AMD Athlon II X2 2.7GHz, 4GB RAM.", "imgs": ["files/usercabs/space_invaders_cocktail_jonno1.jpg"]}, {"name": "Takoni's Maka", "author": "by takoni", "desc": "Original black Dandy cabinet rebuilt into a Galaga cabinet.", "imgs": ["files/usercabs/takonis_maka_takoni.jpg"]}, {"name": "Tron", "author": "by Markus (Kevin Flynn) Hughes", "desc": "Retro cab dedicated to the Tron movie and arcade game. Fluorescent paint, black lights, plexiglas.", "imgs": ["files/usercabs/tron_markus_kevin_flynn_hughes1.jpg", "files/usercabs/tron_markus_kevin_flynn_hughes2.jpg"]}, {"name": "Tron (Updated)", "author": "by Markus Hughes", "desc": "Updated photos of Markus Hughes's Tron cabinet.", "imgs": ["files/usercabs/tron_markus_hughes1.jpg", "files/usercabs/tron_markus_hughes2.jpg"]}, {"name": "Universal Cab", "author": "by Swindus", "desc": "German universal cab with rotatable 28\" real arcade monitor. AMD Sempron 2.8GHz, ArcadeVGA and J-Pac.", "imgs": ["files/usercabs/universal_cab_swindus.jpg"]}, {"name": "Videogame", "author": "by Mr.T", "desc": "JAMMA PLUS cab 175x85x65cm. Philips 25\" FLAT, P4 2.8GHz, ArcadeVGA. Accepts Italian 500-lire coins!", "imgs": ["files/usercabs/videogame_mrt1.jpg", "files/usercabs/videogame_mrt2.jpg"]}, {"name": "Wall Mounted Cab", "author": "by Swindus", "desc": "Rotatable 17\" LCD with replaceable control panel. P III 650MHz, 512MB, Win98SE. MaLa Hardware for lit buttons.", "imgs": ["files/usercabs/wall_mounted_cab_swindus.jpg"]}];
+function openCab(i) {
+  const c = cabs[i];
+  document.getElementById('modal-title').textContent = c.name;
+  document.getElementById('modal-author').textContent = c.author;
+  document.getElementById('modal-desc').textContent = c.desc;
+  const imgs = document.getElementById('modal-imgs');
+  imgs.innerHTML = c.imgs.map(src => `<img src="${src}" alt="${c.name}">`).join('');
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeCab() {
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeIfOverlay(e) {
+  if (e.target === document.getElementById('modal')) closeCab();
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCab(); });
+</script>
+</body>
+</html>
