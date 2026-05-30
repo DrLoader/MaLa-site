@@ -79,6 +79,8 @@
 <p>Enter up to 3 ROM file locations. <strong>Only games with rom</strong> shows only games with ROMs present. <strong>Only working games</strong> hides bad-status games. <strong>Only master</strong> hides clones.</p>
 <img src="images/mameconf3.gif" alt="Exclude" class="doc-img">
 <p>The <strong>exclude parameter</strong> excludes games by description — e.g. enter 'japan' to exclude all Japanese versions.</p>
+<img src="images/mameconf4.gif" alt="MAME optional tab" class="doc-img">
+<p>The Optional tab lets you specify locations for optional ini files and configure window state.</p>
 <img src="images/mameconf5.gif" alt="Pictures path" class="doc-img">
 <p>Enter a valid path for pictures used by your layout. Close with OK.</p>
 <img src="images/mameconfig11.gif" alt="Refresh prompt" class="doc-img doc-img-full">
@@ -102,7 +104,13 @@
 <img src="images/emuconf5.gif" alt="Pre/post commands" class="doc-img">
 <p>Add pre and post commands. Right-click list boxes to add/edit/delete/move items.</p>
 <img src="images/emuconf8.gif" alt="Options tab" class="doc-img">
-<p>The Options tab lets you add folders for pictures and videos and define hotkeys to control the emulator.</p></div>
+<p>The Options tab lets you add folders for pictures and videos and define hotkeys to control the emulator.</p>
+<img src="images/emuconf6.gif" alt="Emulator batch files" class="doc-img">
+<p>To run <strong>batch files</strong>, leave the emulator executable empty and use batch files as the rom extension.</p>
+<img src="images/emuconf7.gif" alt="Emulator shortcuts" class="doc-img">
+<p>For <strong>PC game shortcuts</strong>, use 'lnk' as the ROM extension and <span class="key">%rom%</span> only in the command line.</p>
+<img src="images/emuconf9.gif" alt="Select emulator" class="doc-img doc-img-full">
+<p>After closing options, select the new emulator from the MaLa menu then use 'Refresh main game list'.</p></div>
 
 <div class="sec" id="layout-switch"><h2>Layout Switch &amp; Naming</h2>
 <img src="images/layout1.gif" alt="Layout selection" class="doc-img">
@@ -143,8 +151,20 @@ Menu: <strong>Nintendo 64</strong> / nodes Favorite, All Games:<br>
 <h3>Editing Games</h3>
 <img src="images/malagamelist2.gif" alt="Edit game" class="doc-img doc-img-full">
 <p><strong>Double-click</strong> a game in the destination to edit its name, ROM path and extension.</p>
+<img src="images/malagamelist5.gif" alt="Add by name" class="doc-img doc-img-full">
+<p><strong>Add by name content</strong> — add games with specific substrings e.g. [U] or (Japan).</p>
+<img src="images/malagamelist3.gif" alt="Gamelist menu" class="doc-img doc-img-full">
+<h3>Editing Games</h3>
+<img src="images/malagamelist6.gif" alt="Replace name" class="doc-img doc-img-full">
+<p><strong>Replace part of name</strong> — search and replace parts of game names in one step.</p>
 <h3>Removing Games</h3>
-<p><strong>Right-click</strong> destination list → Delete. Or use <strong>Remove selection</strong> (MAME only) to remove by genre/control type.</p></div>
+<p><strong>Right-click</strong> destination list → Delete. Or use <strong>Remove selection</strong> (MAME only) to remove by genre/control type.</p>
+<img src="images/malagamelist7.gif" alt="Remove by name" class="doc-img doc-img-full">
+<p><strong>Remove by name content</strong> — delete all games with a specific substring in one step.</p>
+<h3>Saving Names</h3>
+<img src="images/malagamelist8.gif" alt="Save names" class="doc-img doc-img-full">
+<img src="images/malagamelist9.gif" alt="Save names 2" class="doc-img doc-img-full">
+<p>Save all name edits to a file so you can reload and rematch names on new game lists.</p></div>
 
 <div class="sec" id="hw-setup"><h2>MaLa Hardware Setup</h2>
 <img src="images/hardware0.gif" alt="Hardware connection" class="doc-img">
@@ -171,7 +191,10 @@ Menu: <strong>Nintendo 64</strong> / nodes Favorite, All Games:<br>
 <p>Use up to 4 filters to control which games appear in the game list. Access from the MaLa menu at any time.</p>
 <img src="images/filter4.gif" alt="Genre submenu" class="doc-img doc-img-full">
 <img src="images/filter2.gif" alt="Filter set example" class="doc-img">
-<p>Filter sets can be saved and accessed from the MaLa menu. Available criteria: Genre · Orientation · Manufacturer · Year · Player count · Control type · Screen type · Bios · Master/Clone</p></div>
+<p>Filter sets can be saved and accessed from the MaLa menu.</p>
+<img src="images/filter5.gif" alt="Filter set saved" class="doc-img doc-img-full">
+<img src="images/filter6.gif" alt="Filter genre" class="doc-img doc-img-full">
+<p>Available criteria: Genre · Orientation · Manufacturer · Year · Player count · Control type · Screen type · Bios · Master/Clone</p></div>
 
 <div class="sec" id="extensions"><h2>MaLa File Extensions</h2>
 <div class="ext-grid">
@@ -195,7 +218,12 @@ Menu: <strong>Nintendo 64</strong> / nodes Favorite, All Games:<br>
 <p>Create an emulator/game list tree with the MaLa Tree tool. Combined with nice graphics in a menu layout this produces great results.</p>
 <img src="images/menu01.jpg" alt="Tree menu example" class="doc-img">
 <img src="images/menu02.jpg" alt="Tree menu example 2" class="doc-img">
-<img src="images/menu03.jpg" alt="Tree menu example 3" class="doc-img"></div>
+<img src="images/menu03.jpg" alt="Tree menu example 3" class="doc-img">
+<p>Arcade menu examples:</p>
+<img src="images/menu04.jpg" alt="Arcade menu 4" class="doc-img">
+<img src="images/menu05.jpg" alt="Arcade menu 5" class="doc-img">
+<img src="images/menu06.jpg" alt="Arcade menu 6" class="doc-img">
+<img src="images/menu07.jpg" alt="Arcade menu 7" class="doc-img"></div>
 
 <div class="sec" id="detection"><h2>Controller Detection</h2>
 <p>Detection is triggered by the joystick buttons allocated to 1 up, 1 down and start. MaLa rotates to the corresponding side automatically and can switch game lists at the same time. Useful for cocktail tables.</p>
@@ -224,4 +252,14 @@ Menu: <strong>Nintendo 64</strong> / nodes Favorite, All Games:<br>
 
 <div class="sec" id="forums"><h2>Help Forums</h2>
 <div class="link-card" style="background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--neon-c);padding:.8rem 1rem;margin-bottom:.75rem;border-radius:0 4px 4px 0"><strong><a href="http://forum.arcadecontrols.com/index.php/board,43.0.html" target="_blank">BYOAC MaLa Forum</a></strong><p style="font-size:.82rem;color:var(--text-dim);margin:.3rem 0 0">The primary English-language MaLa support forum.</p></div>
-<div class="link-card" style="background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--neon-c);padding:.8rem 1rem;margin-bottom:.75rem;border-radius:0 4px 4px 0"><strong><a href="http://www.arcadezentrum.com/forum/forumdisplay.php?f=11" target="_blank">Arcadezentrum.com</a></strong><p style="font-size:.82rem;color:var(--text-dim);margin:.3rem 0 0">The original German MaLa forum. English posts welcome.</p></div></div></main><aside class="sidebar sidebar-right"><div class="sidebar-section"><div class="sidebar-heading">About Author</div><p>MaLa was conceived and written by Stefan 'swindus' Windus. Further development by Simon 'Loadman' Loader.</p></div></aside></div><footer><div class="footer-brand">MaLa Frontend</div>Copyright &copy; 2006&ndash;2008 Stefan Windus</footer></body></html>
+<div class="link-card" style="background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--neon-c);padding:.8rem 1rem;margin-bottom:.75rem;border-radius:0 4px 4px 0"><strong><a href="http://www.arcadezentrum.com/forum/forumdisplay.php?f=11" target="_blank">Arcadezentrum.com</a></strong><p style="font-size:.82rem;color:var(--text-dim);margin:.3rem 0 0">The original German MaLa forum. English posts welcome.</p></div></div></main><aside class="sidebar sidebar-right"><div class="sidebar-section"><div class="sidebar-heading">Wiki</div>
+<p>Full English documentation on the <a href="http://wiki.arcadecontrols.com/wiki/Mala_Wiki" target="_blank">MaLa Wiki at Arcadecontrols</a>.</p></div>
+<div class="sidebar-section"><div class="sidebar-heading">Sections</div>
+<p><a href="#started">Getting Started</a></p>
+<p><a href="#keys">Default Keys</a></p>
+<p><a href="#controller">Controller Setup</a></p>
+<p><a href="#mame">MAME Config</a></p>
+<p><a href="#emulator">Emulator Config</a></p>
+<p><a href="#gamelist">Game List Editor</a></p>
+<p><a href="#hw-setup">Hardware Setup</a></p>
+<p><a href="#faq">FAQ</a></p></div></aside></div><footer><div class="footer-brand">MaLa Frontend</div>Copyright &copy; 2006&ndash;2008 Stefan Windus</footer></body></html>
