@@ -4,13 +4,20 @@
 <body><header><div class="site-title">MaLa</div><div class="site-subtitle">Multi Emulator Front-End &nbsp;::&nbsp; Arcade Cabinet Software</div></header><nav>
   <div class="nav-inner nav-row1"><a href="index.html">About</a><a href="download.html">Download</a><a href="screenshots.html">Screenshots</a><a href="hardware.html" class="active">Hardware</a><a href="layouts.html">Layouts</a><a href="plugins.html">Plugins</a></div>
   <div class="nav-inner"><a href="presets.html">Emu Presets</a><a href="history.html">History</a><a href="wip.html">WIP</a><a href="docs.html">Docs</a><a href="usercabs.html">User Cabs</a><a href="links.html">Links</a><a href="https://github.com/DrLoader/MaLa-Releases" target="_blank">GitHub</a><a href="http://forum.arcadecontrols.com/index.php/board,43.0.html" target="_blank">Forum</a></div>
-</nav><div class="wrapper"><aside class="sidebar"><div class="sidebar-section"><div class="sidebar-heading">Hardware</div><p>MaLa Hardware boards connect via USB.</p><p>Two versions:<br>• LCD + 16 LEDs<br>• 32 LEDs</p></div></aside><main><h1>MaLa Hardware</h1>
+</nav><div class="wrapper"><aside class="sidebar"><div class="sidebar-section"><div class="sidebar-heading">Hardware</div><p>MaLa Hardware boards connect via USB.</p><p>Two versions:<br>• LCD + 16 LEDs<br>• 32 LEDs</p></div></aside><main><h1>Hardware Support</h1>
+
+<h2>Ultimarc PacDrive</h2>
+<img src="images/pacdrive.jpg" alt="Ultimarc PacDrive" style="max-width:400px;border:1px solid var(--border);display:block;margin-bottom:.4rem;filter:saturate(.7)">
+<p>The <a href="https://www.ultimarc.com/output/led-and-output-controllers/pac-drive/" target="_blank">PacDrive</a> by Ultimarc is a USB LED controller natively supported by MaLa. Connect up to 16 LEDs to light your cabinet buttons — controlled by game data. No plugin required.</p>
+<div class="link-card"><h3><a href="https://www.ultimarc.com/output/led-and-output-controllers/pac-drive/" target="_blank">Ultimarc PacDrive</a></h3><p>USB LED controller — 16 outputs, native MaLa support, no plugin required.</p></div>
+
+<h2>IOWarrior Hardware</h2>
 <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1.5rem">
-<img src="images/th_01Mala01.jpg" alt="MaLa Hardware 1" style="width:130px;height:98px;border:1px solid var(--border);filter:saturate(.7)">
-<img src="images/th_01Mala02.jpg" alt="MaLa Hardware 2" style="width:130px;height:98px;border:1px solid var(--border);filter:saturate(.7)">
-<img src="images/th_01Mala03.jpg" alt="MaLa Hardware 3" style="width:130px;height:98px;border:1px solid var(--border);filter:saturate(.7)">
+<img src="images/th_01Mala01.jpg" alt="IOWarrior Hardware 1" style="width:130px;height:98px;border:1px solid var(--border);filter:saturate(.7)">
+<img src="images/th_01Mala02.jpg" alt="IOWarrior Hardware 2" style="width:130px;height:98px;border:1px solid var(--border);filter:saturate(.7)">
+<img src="images/th_01Mala03.jpg" alt="IOWarrior Hardware 3" style="width:130px;height:98px;border:1px solid var(--border);filter:saturate(.7)">
 </div>
-<p>MaLa Hardware enables you to connect an LCD (from 1×16 up to 4×40 characters) and up to 64 LEDs to your cabinet. The LCD can display game information and LEDs can light your buttons — controlled by game data. Connects via USB.</p>
+<p>MaLa-compatible hardware boards using the IOWarrior chip allow you to connect an LCD (from 1×16 up to 4×40 characters) and up to 64 LEDs to your cabinet. The LCD can display game information and LEDs can light your buttons — controlled by game data. Connects via USB.</p>
 <h2>Available Configurations</h2>
 <ul>
 <li>LCD + 16 LEDs (1 board)</li><li>32 LEDs (1 board)</li>
@@ -25,16 +32,12 @@
 <p style="font-size:.78rem;color:var(--text-dim);margin-bottom:1rem">Assembly Kit</p>
 
 <h2>Videos</h2>
-<p>MaLa Hardware in action on Win98SE (PIII 650MHz) — Xvid AVI format:</p>
+<p>IOWarrior Hardware in action on Win98SE (PIII 650MHz) — Xvid AVI format:</p>
 <ul>
 <li><a href="files/videos/choose.avi">Selecting games</a></li>
 <li><a href="files/videos/attract.avi">Attract mode</a></li>
 <li><a href="files/videos/AttractMode2.avi">Massive attract mode</a> — 6 Joysticks, 1 Spinner, 1 Trackball, 47 Buttons</li>
 </ul>
-
-<h2>Ultimarc PacDrive</h2>
-<p>The <a href="https://www.ultimarc.com/output/led-and-output-controllers/pac-drive/" target="_blank">PacDrive</a> by Ultimarc is a USB LED controller that is natively supported by MaLa. Connect up to 16 LEDs to light your cabinet buttons — controlled by game data just like the MaLa Hardware LEDs.</p>
-<div class="link-card"><h3><a href="https://www.ultimarc.com/output/led-and-output-controllers/pac-drive/" target="_blank">Ultimarc PacDrive</a></h3><p>USB LED controller — 16 outputs, native MaLa support, no plugin required.</p></div>
 
 <h2>Other Hardware via Plugins</h2>
 <p>Additional hardware is supported through the <a href="plugins.html">MaLa plugin system</a>, including:</p>
@@ -48,7 +51,7 @@
 <p>See the <a href="plugins.html">Plugins page</a> for all available hardware plugins.</p>
 
 <h2>IOWarrior SDK</h2>
-<p>The MaLa Hardware is based on the IOWarrior chip by Code Mercenaries. Use this SDK to support MaLa Hardware in your own applications. Available for Windows, MacOS, Linux and Java.</p>
+<p>The IOWarrior Hardware is based on the IOWarrior chip by Code Mercenaries. Use this SDK to support MaLa Hardware in your own applications. Available for Windows, MacOS, Linux and Java.</p>
 <div class="link-card"><h3><a href="http://www.codemercs.com/IOWdownloadsE.html" target="_blank">IOWarrior SDK Download Page</a></h3><p>Official SDK download page — Code Mercenaries.</p></div></main><aside class="sidebar sidebar-right"><div class="sidebar-section"><div class="sidebar-heading">About Author</div>
 <p>MaLa was conceived and written by Stefan 'swindus' Windus. Further development by Simon 'Loadman' Loader.</p></div>
 <div class="sidebar-section"><div class="sidebar-heading">IOWarrior SDK</div>
