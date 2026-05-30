@@ -1,4 +1,4 @@
-/*
+/*.html
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
@@ -13,4 +13,10 @@
   Cache-Control: public, max-age=604800
 
 /*.gif
+  Cache-Control: public, max-age=604800
+
+/*.zip
+  Cache-Control: public, max-age=604800
+
+/*.7z
   Cache-Control: public, max-age=604800
