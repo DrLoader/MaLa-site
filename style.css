@@ -49,28 +49,11 @@ body::after {
 
 .banner-header {
   position: relative;
-  background: #000;
+  background: var(--bg);
   line-height: 0;
-  overflow: hidden;
-}
-
-.banner-header::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: 2px solid #ff00aa;
-  pointer-events: none;
-  z-index: 2;
+  border-bottom: 2px solid #ff00aa;
+  box-shadow: 0 0 12px rgba(255,0,170,0.5), 0 0 30px rgba(255,0,170,0.2);
   animation: border-flicker 9s infinite;
-}
-
-.banner-header::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px);
-  pointer-events: none;
-  z-index: 3;
 }
 
 .banner-img {
@@ -81,10 +64,13 @@ body::after {
 }
 
 @keyframes border-flicker {
-  0%, 89%, 91%, 93%, 95%, 100% { opacity: 1; box-shadow: 0 0 8px #ff00aa, 0 0 20px rgba(255,0,170,0.3); }
-  90% { opacity: 0.4; box-shadow: none; }
-  92% { opacity: 0.9; }
-  94% { opacity: 0.5; }
+  0%, 89%, 91%, 93%, 95%, 100% {
+    border-color: #ff00aa;
+    box-shadow: 0 0 12px rgba(255,0,170,0.5), 0 0 30px rgba(255,0,170,0.2);
+  }
+  90% { border-color: transparent; box-shadow: none; }
+  92% { border-color: #ff00aa; box-shadow: 0 0 6px rgba(255,0,170,0.3); }
+  94% { border-color: rgba(255,0,170,0.3); box-shadow: none; }
 }
 
 @keyframes banner-flicker {
