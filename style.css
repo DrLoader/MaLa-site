@@ -53,7 +53,7 @@ body::after {
   line-height: 0;
   border-bottom: 3px solid #ff00aa;
   box-shadow: 0 0 15px rgba(255,0,170,0.6), 0 0 40px rgba(255,0,170,0.25);
-  animation: border-flicker 9s infinite;
+  animation: border-flicker 5s infinite;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -67,15 +67,16 @@ body::after {
 }
 
 @keyframes border-flicker {
-  0%, 88%, 92%, 96%, 100% {
+  0%, 78%, 82%, 86%, 92%, 100% {
     border-color: #ff00aa;
     box-shadow: 0 0 15px rgba(255,0,170,0.6), 0 0 40px rgba(255,0,170,0.25);
   }
-  89% { border-color: transparent; box-shadow: none; }
-  90% { border-color: #ff00aa; box-shadow: 0 0 5px rgba(255,0,170,0.3); }
-  91% { border-color: rgba(255,0,170,0.2); box-shadow: none; }
-  93% { border-color: #ff00aa; box-shadow: 0 0 20px rgba(255,0,170,0.8); }
-  97% { border-color: rgba(255,0,170,0.4); box-shadow: none; }
+  79% { border-color: transparent; box-shadow: none; }
+  80% { border-color: #ff00aa; box-shadow: 0 0 25px rgba(255,0,170,0.9); }
+  81% { border-color: rgba(255,0,170,0.15); box-shadow: none; }
+  83% { border-color: #ff00aa; box-shadow: 0 0 30px rgba(255,0,170,1); }
+  87% { border-color: rgba(255,0,170,0.3); box-shadow: none; }
+  88% { border-color: #ff00aa; box-shadow: 0 0 20px rgba(255,0,170,0.8); }
 }
 
 @keyframes banner-flicker {
