@@ -47,45 +47,54 @@ body::after {
   z-index: 9998;
 }
 
-header {
-  background: linear-gradient(180deg, #161628 0%, var(--bg) 100%);
-  border-bottom: 2px solid var(--neon-g);
-  box-shadow: 0 0 30px rgba(0,255,136,0.3), 0 0 60px rgba(0,255,136,0.1);
-  text-align: center;
-  padding: 2rem 1rem 1.5rem;
+.banner-header {
   position: relative;
+  background: #000;
+  line-height: 0;
   overflow: hidden;
 }
 
-header::before {
+.banner-header::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,255,136,0.08) 0%, transparent 70%);
+  border: 2px solid #ff00aa;
   pointer-events: none;
+  z-index: 2;
+  animation: border-flicker 9s infinite;
 }
 
-.site-title {
-  font-family: 'Press Start 2P', monospace;
-  font-size: clamp(1.8rem, 6vw, 3.5rem);
-  color: var(--neon-g);
-  text-shadow: 0 0 10px var(--neon-g), 0 0 30px var(--neon-g), 0 0 60px rgba(0,255,136,0.5);
-  letter-spacing: 0.05em;
-  animation: flicker 8s infinite;
-  position: relative;
-  z-index: 1;
+.banner-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px);
+  pointer-events: none;
+  z-index: 3;
 }
 
-.site-subtitle {
-  font-family: 'Orbitron', sans-serif;
-  font-size: clamp(0.6rem, 2vw, 0.85rem);
-  color: var(--neon-c);
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-top: 0.5rem;
-  text-shadow: 0 0 10px var(--neon-c);
-  position: relative;
-  z-index: 1;
+.banner-img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  animation: banner-flicker 11s infinite;
+}
+
+@keyframes border-flicker {
+  0%, 89%, 91%, 93%, 95%, 100% { opacity: 1; box-shadow: 0 0 8px #ff00aa, 0 0 20px rgba(255,0,170,0.3); }
+  90% { opacity: 0.4; box-shadow: none; }
+  92% { opacity: 0.9; }
+  94% { opacity: 0.5; }
+}
+
+@keyframes banner-flicker {
+  0%, 91%, 93%, 97%, 100% { opacity: 1; }
+  92% { opacity: 0.88; }
+  94% { opacity: 1; }
+  96% { opacity: 0.82; }
+  98% { opacity: 0.95; }
 }
 
 @keyframes flicker {
