@@ -75,9 +75,7 @@ body::after {
 
 .banner-img {
   width: 100%;
-  max-height: 120px;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
   display: block;
   animation: banner-flicker 11s infinite;
 }
