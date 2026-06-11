@@ -18,8 +18,3 @@ Desktop.ini
 *.swp
 *.swo
 *~
-
-# Temp files
-*.tmp
-*.bak
-*.orig
