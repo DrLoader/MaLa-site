@@ -36,16 +36,20 @@
 \f0\b Remove Real time lable changes for the slots
 \f1\b0 \
       \
-\
 AI:  Let us know how LED /LCD numebr ? allocation works in D2007 code . Mayb e do a deep dive ai wise to create a refernce document of a working system to use to implement in D12\
 \
-LCD \
+\pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
+
+\f0\b \cf0 LCD 
+\f1\b0 \
 - Configuration for Parallel interfaces (H???) - Make clear its for parrallel LCD nor serials???\
 - Initialises on startup (Mala starting)\
 -  Displays correctly during:  list scroll, game launch, Jukebox\
 - Any crazy characters\
     -  LCD Type support.  8x2, 16x2, 16x4 16x1 20x2 20x4 24x2 24x2 24x4 40x4\
-LED -\
+
+\f0\b LED 
+\f1\b0 -\
   - Configuration (
 \f0\b tempted to redo the whole thing
 \f1\b0 ). for V2.1 ???\
@@ -54,25 +58,23 @@ LED -\
       - To what Button , stand alone LED or device (like Joystick)\
     - Attract mode : When does it kick in and out (seperate timers and triggers than screenssaver)\
    - How does Number allocation work now and how should it work in future 2.1. ?\
-      \
-\pard\pardeftab720\sa213\partightenfactor0
-
+      
 \f2\fs32 \cf2 \expnd0\expndtw0\kerning0
 \ul \ulc2 \
 \pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
 
 \f1\fs28 \cf0 \kerning1\expnd0\expndtw0 \ulnone ###########################
 \f2\fs32 \cf2 \expnd0\expndtw0\kerning0
-\ul \ulc2 \
+\ul \
 \pard\pardeftab720\sa213\partightenfactor0
-\cf2 \ulc2 \
-\
+\cf2 \
 Mame testing:\ulnone \uc0\u8232 \u8232 \u8232 Versions to test:
 \f3\b \
 0.79 - Mametable
 \f2\b0 \
+\pard\pardeftab720\sa213\partightenfactor0
 
-\f3\b 0.106 
+\f3\b \cf2 0.106 
 \f4\fs24 \cf0 Very popular \'93frozen\'94 version used by many arcade cabinet owners and ROM sets. Common compatibility target. 
 \f5\fs32 \cf2 \
 
@@ -80,8 +82,8 @@ Mame testing:\ulnone \uc0\u8232 \u8232 \u8232 Versions to test:
 \f4\fs24 \cf0 Another hugely-used ROM-set milestone. Many frontend users still reference it today.\
 
 \f6\i\b0 0.144 
-\f7\i0 \outl0\strokewidth0 \strokec2 Pre-MESS-merge, last "MAME-only" architecture generation
-\f5\b\fs32 \cf2 \outl0\strokewidth0 \
+\f7\i0 Pre-MESS-merge, last "MAME-only" architecture generation
+\f5\b\fs32 \cf2 \
 
 \f3 0.162 
 \f4\fs24 \cf0 Major milestone: MESS merged into MAME, dramatically expanding listxml output and machine support. Frontends can break here. 
@@ -92,15 +94,15 @@ Mame testing:\ulnone \uc0\u8232 \u8232 \u8232 Versions to test:
 \f9\i\fs32 \cf2 \
 0.200 
 \f7\i0\fs24 \cf0 Nice representative \'93modern MAME\'94 version. Monthly release era fully established.\
-0.205 \outl0\strokewidth0 \strokec2 Stable modern-era baseline, last "comfortable" 32-bit-capable generation\outl0\strokewidth0 \
+0.205 Stable modern-era baseline, last "comfortable" 32-bit-capable generation\
 0.218 
-\f4\b \outl0\strokewidth0 \strokec2 Last 32-bit Windows release
-\f7\b0 \strokec2  \'97 hard compatibility boundary
-\f9\i\fs32 \cf2 \outl0\strokewidth0 \
+\f4\b Last 32-bit Windows release
+\f7\b0  \'97 hard compatibility boundary
+\f9\i\fs32 \cf2 \
 0.250 
 \f7\i0\fs24 \cf0 Modern XML and command-line behaviour, but not bleeding edge.\
-0.270   \outl0\strokewidth0 \strokec2 Recent, fully 64-bit-only, modern command-line/.ini behavior
-\f2\fs32 \cf2 \outl0\strokewidth0 \
+0.270   Recent, fully 64-bit-only, modern command-line/.ini behavior
+\f2\fs32 \cf2 \
 
 \f3\b 0.288 
 \f7\b0\fs24 \cf0 Current release
@@ -150,32 +152,32 @@ Mame testing:\ulnone \uc0\u8232 \u8232 \u8232 Versions to test:
 
 \f1\fs28 \cf0 \
 \
-\pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
-\cf0 ###########################\
+###########################\
 \
-- Backup and restore config\
+\pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
+
+\f0\b \cf0 - Backup and restore config
+\f1\b0 \
 \pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
 \ls9\ilvl0\cf0 \
 \pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
 \cf0 ###########################\
 \
-Othe Emu\
+Other Emu\
 \pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
-\ls10\ilvl0\cf0 {\listtext	11	}Then do another meulator (Amiga) - Basic test\
+\ls10\ilvl0\cf0 {\listtext	11	}Then do another emulator (Amiga) - Basic test\
 \pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
 \cf0 \
-\pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
-\cf0 ###########################\
+###########################\
 \
 Juke box \
     - Who uses it anyway ??????\
 \pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
-\ls11\ilvl0\cf0 {\listtext	11	}Then do another meulator (Amiga) - Basic test\
+\ls11\ilvl0\cf0 {\listtext	11	}Then do another emulator (Amiga) - Basic test\
 \
 \pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
 \cf0 ###########################\
-\pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
-\cf0 \
+\
 \pard\tqr\tx560\tx720\li720\fi-720\sl324\slmult1\partightenfactor0
 \ls12\ilvl0\cf0 {\listtext	12	}Othjer Tests:\
 {\listtext	13	}   -Music - Resume , Playlist (on Mala stop start and game Launch and exit)\
@@ -188,10 +190,10 @@ Juke box \
 \f0\b \cf0 Prior to BETA release-
 \f1\b0 \
 \
-- Review Logginhg - Logging levels Debug v normal, What can be removed (what is good for AI v user) ?  If crash can details be logged first? - Prompt to log in debug mode after crash (if not debug already)- If debug prompt to suggest hey send diagnostics to me.\
+- Review Logging - Logging levels Debug v normal, What can be removed (what is good for AI v user) ?  If crash can details be logged first? - Prompt to log in debug mode after crash (if not debug already)- If debug prompt to suggest hey send diagnostics to me.\
 - Check forum issues for things to implement immediately or 2.1. - Put issues in piles\
 - Smoke test again Windows 98 and XP and Win 7 ? (Not supported) \
-- Comnined Mala Tool ??? (At least smoke test Layout and Gamelist works or send old tools from D2007 (inc Attract ???) \
+- Combined Mala Tool ??? (At least smoke test Layout and Gamelist works or send old tools from D2007 (inc Attract ???) \
 \pard\tx720\sl324\slmult1\partightenfactor0
 \cf0 \
 For Beta testers - Enhanced Beta mode- \
