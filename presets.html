@@ -18,6 +18,11 @@ In MaLa Options, go to <strong>Other Emu Config → Execution</strong>, right-cl
 
 <img src="images/presets-menu.png" alt="MaLa Emulator Presets right-click menu" style="max-width:100%;border:1px solid var(--border);margin:1rem 0;display:block;" onerror="this.style.display='none'">
 
+<h3>Example</h3>
+<p>Say you want to add Atari 2600 support using the Stella emulator. In MaLa Options → Other Emu Config, add a new emulator called "Atari", switch to the <strong>Execution</strong> tab, right-click the Command line box, and choose <strong>Emulator presets → Atari → Atari 2600 (Stella)</strong>. MaLa fills in the Command line box for you:</p>
+<pre style="background:rgba(255,255,255,.03);border:1px solid var(--border);padding:.75rem 1rem;overflow-x:auto;white-space:pre-wrap;word-break:break-all">-fullscreen 1 "%path%\%rom%.%ext%"</pre>
+<p><code>%path%</code>, <code>%rom%</code> and <code>%ext%</code> are placeholders MaLa substitutes automatically for whichever game you launch &mdash; you never type these yourself, and the same preset works for every ROM in that system's game list. Pick a different emulator instead of Stella and you'd get a completely different command line, matching that emulator's own syntax &mdash; that's the whole point of a preset.</p>
+
 <p>The following systems and emulators have a built-in preset:</p>
 
 <h3>Atari</h3>
