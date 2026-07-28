@@ -5,24 +5,82 @@
   <div class="nav-inner nav-row1"><a href="index.html">About</a><a href="story.html">Story</a><a href="download.html">Download</a><a href="screenshots.html">Screenshots</a><a href="hardware.html">Hardware</a><a href="layouts.html">Layouts</a><a href="plugins.html">Plugins</a></div>
   <div class="nav-inner"><a href="presets.html" class="active">Emu Presets</a><a href="history.html">History</a><a href="wip.html">WIP</a><a href="docs.html">Support</a><a href="usercabs.html">User Cabs</a><a href="links.html">Links</a><a href="https://github.com/DrLoader/MaLa-Releases" target="_blank">GitHub</a><a href="http://forum.arcadecontrols.com/index.php/board,43.0.html" target="_blank">Forum</a></div>
 </nav><div class="wrapper"><aside class="sidebar"><div class="sidebar-section"><div class="sidebar-heading">Presets</div>
-<p>Preset files ship with MaLa — no manual command-line editing needed.</p>
-<p>Select your emulator in MaLa Options and the parameters are filled in automatically.</p>
+<p>Presets are built into MaLa &mdash; no manual command-line editing needed for supported emulators.</p>
+<p>Right-click the Command line box in MaLa Options and pick your emulator, and the parameters are filled in automatically.</p>
 <p>You can still customise any parameter to suit your specific setup.</p></div>
 <div class="sidebar-section"><div class="sidebar-heading">More Emulators</div>
 <p>Not listed? Check the <a href="docs.html">Docs page</a> for how to configure any command-line emulator manually.</p></div></aside><main><h1>Emulator Presets</h1>
-<p>The following systems are covered by the preset file included with MaLa. Select your emulator in MaLa Options and the command-line parameters are filled in automatically.</p>
+<p>MaLa can launch any command-line-based emulator, but every emulator expects its own command-line syntax &mdash; different switches, different quoting, different argument order. Emulator presets remove that guesswork: pick your emulator from a built-in list and MaLa fills in the correct command line for you, for the systems below.</p>
+
+<div class="info-box"><span class="info-label">► HOW IT WORKS</span>
+In MaLa Options, go to <strong>Other Emu Config → Execution</strong>, right-click the <strong>Command line</strong> box, and choose <strong>Emulator presets</strong>. Pick your system, then your specific emulator, and the command line is filled in automatically &mdash; ready to use, or to tweak further for your own setup.
+</div>
+
+<img src="images/presets-menu.png" alt="MaLa Emulator Presets right-click menu" style="max-width:100%;border:1px solid var(--border);margin:1rem 0;display:block;" onerror="this.style.display='none'">
+
+<p>The following systems and emulators have a built-in preset:</p>
+
+<h3>Atari</h3>
 <ul class="preset-list">
-<li>3DO (FreeDoWrapper)</li><li>Atari 2600 (Z26)</li><li>Atari 5200 (Jum52)</li>
+<li>Atari 2600 (Z26)</li><li>Atari 2600 (Stella)</li><li>Atari 5200 (Jum52)</li>
 <li>Atari 5200 (MESS)</li><li>Atari 7800 (MESS)</li><li>Atari 800XL (Atari800)</li>
-<li>Atari Jaguar (VirtualJaguar)</li><li>Atari Lynx (Handy)</li><li>Channel F (MESS)</li>
-<li>Colecovision (MESS)</li><li>Commodore Amiga (WinUAE)</li><li>Daphne (Batch)</li>
-<li>Future Pinball</li><li>Gameboy (VisualBoyAdvance)</li><li>Gameboy Advance (VisualBoyAdvance)</li>
-<li>Gameboy Color (VisualBoyAdvance)</li><li>Intellivision (Nostalgia)</li>
-<li>Neo Geo Pocket Color (NeoPop)</li><li>Nintendo (FceUltra)</li><li>Nintendo (Nestopia)</li>
-<li>Nintendo 64 (Project64)</li><li>Odyssey 2 (O2EM)</li><li>PC Engine (Magic Engine)</li>
-<li>Sega 32X (Fusion)</li><li>Sega CD (Fusion)</li><li>Sega Dreamcast (Chankast)</li>
-<li>Sega Game Gear (Fusion)</li><li>Sega Genesis (Fusion)</li><li>Sega Master System (Fusion)</li>
-<li>Sony PlayStation (ePSXe)</li><li>Super Nintendo (ZSNESW)</li><li>Vectrex (MESS)</li>
-<li>Virtual Boy (RealityBoy)</li><li>Visual Pinball</li><li>Zinc (Howard Casto Wrapper)</li>
+<li>Atari Jaguar (VirtualJaguar)</li><li>Atari Lynx (Handy)</li>
 </ul>
+
+<h3>Commodore</h3>
+<ul class="preset-list">
+<li>Commodore Amiga (WinUAE)</li>
+</ul>
+
+<h3>Nintendo</h3>
+<ul class="preset-list">
+<li>Gameboy (VisualBoyAdvance)</li><li>Gameboy Advance (VisualBoyAdvance)</li>
+<li>Gameboy Color (VisualBoyAdvance)</li><li>Nintendo (FceUltra)</li>
+<li>Nintendo (Nestopia)</li><li>Nintendo (Mesen)</li>
+<li>Nintendo 64 (Project64)</li><li>Nintendo 64 (Mupen64Plus)</li>
+<li>Nintendo DS (DeSmuME)</li><li>Nintendo DS (melonDS)</li>
+<li>Nintendo GameCube (Dolphin)</li><li>Nintendo Wii (Dolphin)</li>
+<li>Super Nintendo (ZSNESW)</li><li>Super Nintendo (Snes9x)</li>
+<li>Virtual Boy (RealityBoy)</li>
+</ul>
+
+<h3>Sega</h3>
+<ul class="preset-list">
+<li>Sega 32X (Fusion)</li><li>Sega CD (Fusion)</li>
+<li>Sega Dreamcast (Chankast)</li><li>Sega Dreamcast (NullDC)</li>
+<li>Sega Dreamcast (Flycast)</li><li>Sega Dreamcast (Redream)</li>
+<li>Sega Game Gear (Fusion)</li><li>Sega Genesis (Fusion)</li>
+<li>Sega Master System (Fusion)</li><li>Sega SC-3000 (Fusion)</li>
+<li>Sega SG-1000 (Fusion)</li><li>Sega Saturn (Mednafen)</li>
+</ul>
+
+<h3>Sony</h3>
+<ul class="preset-list">
+<li>Sony PlayStation (ePSXe)</li><li>Sony PlayStation (DuckStation)</li>
+<li>Sony PlayStation 2 (PCSX2)</li><li>Sony PSP (PPSSPP)</li>
+</ul>
+
+<h3>Other Consoles &amp; Handhelds</h3>
+<ul class="preset-list">
+<li>3DO (FreeDoWrapper)</li><li>Adventure Vision (MESS)</li>
+<li>Arcadia (MESS)</li><li>Astrocade (MESS)</li>
+<li>Bandai WonderSwan (Oswan)</li><li>Channel F (MESS)</li>
+<li>Colecovision (MESS)</li><li>Intellivision (Nostalgia)</li>
+<li>Neo Geo Pocket Color (NeoPop)</li><li>Neo Geo Pocket Mono (NeoPop)</li>
+<li>Odyssey 2 (O2EM)</li><li>PC Engine / TurboGrafx-16 (Magic Engine)</li>
+<li>Supervision (MESS)</li><li>Vectrex (MESS)</li>
+</ul>
+
+<h3>Pinball</h3>
+<ul class="preset-list">
+<li>Future Pinball</li><li>Visual Pinball</li>
+</ul>
+
+<h3>PC, Multi-System &amp; Laserdisc</h3>
+<ul class="preset-list">
+<li>Daphne (Batch)</li><li>DOSBox</li><li>DOSBox-X</li>
+<li>Passigar Scumm (Batch)</li><li>RetroArch (edit -L core)</li>
+<li>ScummVM</li><li>Zinc (Howard Casto Wrapper)</li>
+</ul>
+
 <div class="info-box"><span class="info-label">► NOTE</span>These presets are a starting point. You can customise any command-line parameters in the MaLa Options dialog.</div></main><aside class="sidebar sidebar-right"><div class="sidebar-section"><div class="sidebar-heading">About Author</div><p>MaLa was conceived and written by Stefan 'swindus' Windus. Further development by Simon 'Loadman' Loader.</p></div></aside></div><footer><div class="footer-brand">MaLa Frontend</div>Copyright &copy; 2006&ndash;2026 Stefan Windus and Simon Loader</footer></body></html>
