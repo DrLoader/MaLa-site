@@ -28,7 +28,7 @@ MaLa v2.0 is currently in active development — a major modernisation of the ex
 
 <div class="info-box" style="border-color:rgba(0,255,136,.4);background:rgba(0,255,136,.05);margin-top:1.5rem">
 <span class="info-label" style="color:var(--neon-g)">► BETA 1 TESTERS WANTED</span>
-A limited MaLa v2.0 Beta 1 test release is currently targeted for <strong>mid-September 2026</strong>, pending final validation. Development has moved into structured testing: validating layout rendering, hardware compatibility (LED/LCD boards), and emulator launching across multiple MAME versions.
+A limited MaLa v2.0 Beta 1 test release is currently targeted for <strong>mid-September 2026</strong>, pending final validation. Hardware and emulator testing are complete &mdash; Layout Parity validation (checking rendering matches the previous version) is the last step remaining.
 <br><br>Interested in testing? Reply on the <a href="https://forum.arcadecontrols.com/index.php/topic,170345.0.html" target="_blank" style="color:var(--neon-g)">BYOAC Forum thread</a> with your current setup.
 </div>
 
@@ -37,7 +37,7 @@ A limited MaLa v2.0 Beta 1 test release is currently targeted for <strong>mid-Se
 <div class="version-section-label">What's New</div>
 <ul>
 <li>Complete rebuild in <strong>Delphi 13</strong> — modern compiler, modern codebase</li>
-<li><strong>Backward compatible by design</strong> — existing v1.74 configs and layouts are intended to continue working, and existing <strong>.mplugin plugins are expected to remain compatible</strong>, pending final verification</li>
+<li><strong>Backward compatible by design</strong> — existing v1.74 configs, layouts, and <strong>.mplugin plugins remain fully compatible</strong></li>
 <li>Target platform: <strong>Windows 10 and Windows 11</strong>, including 64-bit Windows; MaLa remains a <strong>32-bit application</strong></li>
 <li>Improved stability and crash resistance throughout</li>
 <li>Reliable keyboard and joystick focus at startup, when auto-starting with Windows, and after waking from sleep or the screensaver &mdash; no more clicking the window before controls respond</li>
@@ -48,8 +48,8 @@ A limited MaLa v2.0 Beta 1 test release is currently targeted for <strong>mid-Se
 <li>Many more <a href="presets.html">built-in emulator presets</a> added &mdash; setting up a new emulator is now just a couple of clicks</li>
 <li>Updated <a href="plugins.html">plugin API</a> with improved event system — SDK examples for <strong>C++ and Delphi</strong></li>
 <li>Modernised UI with <strong>VCL Styles</strong> support</li>
-<li>Companion tools (Layout, GameList, Tree, AttractMode) rebuilt and being combined into a single unified <strong>MaLaTools</strong> app &mdash; one app instead of four, shipping with the final v2.0 release</li>
-<li>New tools: <strong>MaLaControlCmd</strong> (command-line) and <strong>MaLaControlGui</strong> (graphical) — send commands to a running MaLa instance</li>
+<li>Companion tools (GameList, Tree, Layout, AttractMode editors) rebuilt and launched directly from MaLa's own Options dialog &mdash; no separate launcher app needed, shipping with the final v2.0 release</li>
+<li>New: <strong>MaLa Control</strong>, a command-line tool for remote-controlling a running MaLa instance from scripts or automation &mdash; including a clean-shutdown-then-force-kill <strong>KILL</strong> command</li>
 </ul>
 <div class="version-section-label">Timeline</div>
 <p style="font-size:.82rem;color:var(--text-dim)">No date has been set for the final v2.0 release. <strong>Beta 1 is currently targeted for mid-September 2026</strong>, pending final validation. Development is progressing through a structured multi-pass stabilisation plan. Watch this page and the <a href="http://forum.arcadecontrols.com/index.php/board,43.0.html" target="_blank">BYOAC Forum</a> for updates.</p>
